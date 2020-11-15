@@ -67,6 +67,14 @@ TA Email: Monica - mhong@codingdojo.com
   - Exam W3D5 - 02/18/2021
   - Projects W4
 
+### Daily Schedule
+
+- 09:00 - Algorithms
+- 10:00 - Lecture/Discussion
+- 11:00 - Group Acitivty
+- 12:00 - Lunch
+- 14:00 - Q/A || Discussion
+
 ## Questions
 
 - ?
