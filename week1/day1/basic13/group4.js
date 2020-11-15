@@ -1,9 +1,16 @@
-var members = ["name", "name"]
+var members = ["Alreem_Alabbad", "name"]
 // Create a function for each
 
 // 1. Print 1-255
 // Print all the integers from 1 to 255.
-// print1To255()
+function print1to255() {
+  var num = 1
+  while (num <= 255) {
+    console.log(num)
+    num = num + 1
+  }
+}
+print1to255()
 
 // 2. Print Odds 1-255
 // Print all odd integers from 1 to 255.

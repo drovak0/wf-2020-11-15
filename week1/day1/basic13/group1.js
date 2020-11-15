@@ -1,10 +1,11 @@
-var members = ["Chris B", "Monica H"]
+var members = ["name", "name"]
 // Create a function for each
 
 // 1. Print 1-255
 // Print all the integers from 1 to 255.
 function print1To255() {
   // code here
+  console.log("printing!")
 }
 
 print1To255()
