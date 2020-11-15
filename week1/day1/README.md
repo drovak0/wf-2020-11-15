@@ -55,7 +55,6 @@ TA Email: Monica - mhong@codingdojo.com
 
 - Web Fundamentals (2 weeks) 11/15/2020 - 11/26/2020
   - Exam W1D5 - 11/19/2020
-  - Projects W4
 - Python (4 weeks) 11/29/2020 - 12/24/2020
   - Exam W3D5 - 12/17/2020
   - Projects W4
@@ -67,7 +66,7 @@ TA Email: Monica - mhong@codingdojo.com
   - Exam W3D5 - 02/18/2021
   - Projects W4
 
-### Daily Schedule
+### Daily Schedule - Sunday - Thursday
 
 - 09:00 - Algorithms
 - 10:00 - Lecture/Discussion
