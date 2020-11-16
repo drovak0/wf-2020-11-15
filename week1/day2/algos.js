@@ -6,7 +6,7 @@
 
   What index are you adding a new item at?
 */
-
+//            0     1     2     3
 // const arr1 = ["a", "b", "c"]
 // const newItem1 = "d"
 // const expected1 = 4
@@ -19,7 +19,19 @@
 
 function push(arr, newItem) {
   // code here
+  console.log("arr: ", arr)
+  console.log("newItem: ", newItem)
+  // assign the newItem to the last index + 1 of the array
+  arr[arr.length] = newItem
+
+  // return the new length of the array
+  // console.log(arr.length)
+  return arr.length
 }
+
+// excute the function with arguments
+// const newLength = push(arr1, newItem1)
+// console.log(newLength)
 
 /* ******************************************************************************** */
 
@@ -28,9 +40,9 @@ function push(arr, newItem) {
   return the nth-to-last element
 */
 
-// const arr1 = ["a", "b", "c", "d"]
-// const idx1 = 1
-// const expected1 = "d"
+const arr1 = ["a", "b", "c", "d"]
+const idx1 = 1
+const expected1 = "d"
 
 // const arr2 = ["a", "b", "c", "d"]
 // const idx2 = 2
@@ -45,8 +57,14 @@ function push(arr, newItem) {
 // const expected4 = null
 
 function nthLast(arr, nthToLast) {
+  console.log("arr: ", arr)
+  console.log("nthToLast: ", nthToLast)
   // code here
+  // find the last item subtract number from the last
+  return arr[arr.length - nthToLast]
 }
+
+console.log(nthLast(arr1, 1))
 
 /* ******************************************************************************** */
 
