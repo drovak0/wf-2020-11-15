@@ -1,0 +1,24 @@
+/* basic css reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+}
+
+#title {
+  background-color: pink;
+}
+
+.boxes {
+  height: 50px;
+  border: 1px solid green;
+  background-color: black;
+}
+
+.boxes:first-of-type {
+  background-color: orange;
+}
