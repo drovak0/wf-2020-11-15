@@ -11,9 +11,17 @@
 // // what arr1 should be after running pop function
 // const expectedArr1 = [1, 2]
 
+const arr1 = [1, 2, 3]
+const arr2 = [1, 2, 3, 4, 5, 6]
 function pop(arr) {
-  // code here
+  var last = arr[arr.length - 1]
+  console.log(last)
+  arr.length = arr.length - 1
+  console.log(arr)
+  return last
 }
+pop(arr1)
+pop(arr2)
 
 /* ******************************************************************************** */
 
