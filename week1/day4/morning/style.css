@@ -1,0 +1,44 @@
+* {
+  background-color: orange;
+}
+
+div#top {
+  background-color: firebrick;
+}
+
+div.main h1 {
+  background-color: blue;
+  /* add new styles to the existing selector */
+  /* add new styles to the existing selector */
+  /* add new styles to the existing selector */
+  /* add new styles to the existing selector */
+  /* add new styles to the existing selector */
+}
+
+/* #first > li {
+  background-color: lawngreen;
+} */
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+ul > li:first-child {
+  background-color: darkcyan;
+}
+
+div.main h1 {
+  background-color: blue;
+  /* add new styles to the existing selector */
+}
+div.main h1 {
+  background-color: blue;
+  /* add new styles to the existing selector */
+}
+
+/* if you are going to override, use more specificity */
+div.main h1 {
+  background-color: blue;
+  /* add new styles to the existing selector */
+}
