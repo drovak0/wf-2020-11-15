@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* border: 1px dotted pink; */
+}
+
+/* Header */
+header {
+  background-color: #333333;
+  padding: 25px;
+  color: #bdb8b5;
+  margin-bottom: 20px;
+}
+
+header > div.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 45px;
+}
+
+header span {
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: sub;
+}
+
+header ul {
+  display: flex;
+  background-color: #232323;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+header li {
+  list-style: none;
+}
+header li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+header li a {
+  color: #bdb8b5;
+  text-decoration: none;
+}
+
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.graybox {
+  height: 300px;
+  width: 325px;
+  background-color: lightgray;
+  padding: 25px 25px 40px 25px;
+  color: #999999;
+}
+.graybox h1 {
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: normal;
+}
+.graybox p {
+  font-size: 16px;
+}
+.graybox a,
+.card a {
+  display: block;
+  color: orange;
+  text-align: right;
+  text-decoration: none;
+}
+.blackbox {
+  height: 300px;
+  width: 630px;
+  background-color: #2e2d2e;
+}
+.blackbox p {
+  color: lightgray;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 32pt;
+}
+.card {
+  padding: 15px;
+}
+.card h5 {
+  color: gray;
+  margin-bottom: 10px;
+}
+.card .box {
+  height: 80px;
+  width: 80px;
+  display: block;
+  background-color: #2e2d2e;
+  float: left;
+  margin-right: 10px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.mt {
+  margin-top: 30px;
+}
+/* Link color #F1A040 */
