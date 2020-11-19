@@ -37,5 +37,5 @@ Exam code `21ed8991`
 - Ask for a precheck before submitting
 - When ready for a check say 'Ready for exam check' https://dojo.news/coding-dojo/channels/full-stack-2020-11-15
 
-- 1pm [Python Project Presentations]()
+- 1pm [Python Project Presentations](https://codingdojo.zoom.us/j/94539574383?pwd=KzF4cTFwVDlXelhrd0R1NXVFWUM3UT09)
 - W2D5 Web Fundamentals Project Presentations (individual or group)
