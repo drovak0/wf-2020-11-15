@@ -39,3 +39,4 @@ Exam code `21ed8991`
 
 - 1pm [Python Project Presentations](https://codingdojo.zoom.us/j/94539574383?pwd=KzF4cTFwVDlXelhrd0R1NXVFWUM3UT09)
 - W2D5 Web Fundamentals Project Presentations (individual or group)
+- 3pm meet in room to discuss projects
