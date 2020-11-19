@@ -1,6 +1,6 @@
 # Exam Info
 
-Exam code ``
+Exam code `21ed8991`
 
 ## Recomended pre-test song
 
