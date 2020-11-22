@@ -1,0 +1,30 @@
+# Javascript
+
+- Web (Front-end/Back-end)
+- Dev Tools (alert, console.log)
+- Data Types
+  - number
+  - string
+  - boolean
+  - array
+  - objects
+  - functions/method
+- Variables (scope)
+  - var - can be reassigned (function scoped)
+  - let - can be reassigned (block scoped)
+  - const - can not be reassigned (block scoped)
+- Operators
+- Assignment vs comparison
+  - assignment =
+  - < > == === !=
+- Conditions
+  - if else else if
+- Loops
+  - for
+  - while
+  - do while
+- Functions
+  - function () {}
+  - function name() {}
+- Objects
+  - key, value pair
