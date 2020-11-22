@@ -1,5 +1,7 @@
 # Web Fundamentals Project Presentations
 
+Thursday @2pm mandatory presentations
+
 - HTML, CSS, Javascript
 - individual or group
 - at least 1 page
