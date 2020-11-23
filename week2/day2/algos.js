@@ -18,8 +18,27 @@
 // const expected2 = [1, 2, 3, "a", "b"]
 
 function concat(arr1, arr2) {
-  // code here
+  // set up new array
+  var newarr = []
+
+  // read arr1 and push contents into newarr
+  for (var i = 0; i < arr1.length; i++) {
+    newarr.push(arr1[i])
+  }
+
+  // read arr2 and push contents into newarr
+  for (var j = 0; j < arr2.length; j++) {
+    console.log(`j: `, j)
+    newarr.push(arr2[j])
+  }
+
+  console.log(newarr)
+  return newarr
 }
+
+// const arrA1 = ["a", "b"]
+// const arrB1 = [1, 2, 3]
+// concat(arrA1, arrB1)
 
 /* ******************************************************************************** */
 
@@ -40,5 +59,39 @@ function concat(arr1, arr2) {
 // const expected3 = [];
 
 function concatArrWithSelf(arr) {
-  // code here
+  // set up newarr
+  var newarr = []
+  // loop twice
+  //    start   ; stop ;step
+  for (var i = 0; i < 2; i++) {
+    console.log("Outter Loop: *****************")
+    console.log(`i: `, i)
+
+    // read values in arr
+    // push those values into the new arr
+    for (var j = 0; j < arr.length; j++) {
+      console.log("Inner Loop: *****************")
+      console.log(`arr[j]: `, arr[j])
+      newarr.push(arr[j])
+      console.log(`newarr: `, newarr)
+    }
+  }
+  console.log(newarr)
+  return newarr
 }
+// const arrA3 = ["a", "b"]
+// console.log(concatArrWithSelf(arrA3))
+
+function concatArrWithSelf2(arr) {
+  var newarr = []
+  for (var j = 0; j < arr.length; j++) {
+    newarr.push(arr[j])
+  }
+  for (var j = 0; j < arr.length; j++) {
+    newarr.push(arr[j])
+  }
+  return newarr
+}
+
+const arrA3 = ["a", "b"]
+console.log(concatArrWithSelf2(arrA3))
