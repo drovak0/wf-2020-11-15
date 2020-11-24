@@ -19,8 +19,24 @@
 
 function reverseArr(arr) {
   // code here
+  // pseudo
+  // loop
+  for (var i = 0; i < Math.floor(arr.length / 2); i++) {
+    console.log("arr[i]: ", arr[i])
+    console.log("arr[arr.length - 1 - i]: ", arr[arr.length - 1 - i])
+    // swap elements
+    // assign the first item to temp
+    var temp = arr[i]
+    // assign first item to last item in array
+    arr[i] = arr[arr.length - 1 - i]
+    // assign the last to temp
+    arr[arr.length - 1 - i] = temp
+  }
+  console.log(arr)
+  return arr
 }
 
+// reverseArr([1, 2, 3, 4, 5])
 /* ******************************************************************************** */
 
 /*
@@ -48,10 +64,10 @@ function reverseArr(arr) {
 // const endIdx3 = 2;
 // const expected3 = ["b"];
 
-// const arr4 = ["a", "b", "c", "d", "e"];
-// const startIdx4 = -100;
-// const endIdx4 = 100;
-// const expected4 = ["a", "b", "c", "d", "e"];
+const arr4 = ["a", "b", "c", "d", "e"]
+const startIdx4 = -100
+const endIdx4 = 100
+const expected4 = ["a", "b", "c", "d", "e"]
 
 // const arr5 = ["a", "b", "c", "d", "e"];
 // const startIdx5 = 0;
@@ -65,4 +81,19 @@ function reverseArr(arr) {
 
 function slice(arr, startIdx, endIdx) {
   // code here
+  var newArr = []
+  // some condition to handle -100
+  if (startIdx < 0) {
+    startIdx = 0
+  }
+  if (endIdx > arr.length) {
+    endIdx = arr.length
+  }
+  for (var i = startIdx; i < endIdx; i++) {
+    newArr.push(arr[i])
+  }
+  console.log(newArr)
+  return newArr
 }
+
+slice(arr4, -100, 100)
