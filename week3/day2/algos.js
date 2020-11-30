@@ -25,7 +25,18 @@
 // const separator5 = ", "
 // const expected5 = ""
 
-function join(arr, separator) {}
+function join(arr, separator = ", ") {
+  let joined = "";
+
+  if (!arr.length) {
+    return joined;
+  }
+
+  // less than arr.length - 1 to stop before last
+  for (let i = 0; i < arr.length - 1; i++) {
+    joined += arr[i] + separator;
+  }
+  return joined
 
 /*****************************************************************************/
 
@@ -39,4 +50,33 @@ function join(arr, separator) {}
 // const nums1 = [1, 13, 14, 15, 37, 38, 70];
 // const expected1 = "1, 13-15, 37-38, 70";
 
-function bookIndex(nums) {}
+function bookIndex(pageNums) {
+  let formattedPageNums = ""
+  let pageRangeStartIdx = 0
+
+  for (let i = 0; i < pageNums.length; i++) {
+    let currentPageNum = pageNums[i]
+    let nextPageNum = pageNums[i + 1]
+    let pageRangeStopIdx = i
+
+    // page range is not sequential
+    if (currentPageNum + 1 !== nextPageNum) {
+      // single page, no range
+      if (pageRangeStartIdx === pageRangeStopIdx) {
+        formattedPageNums += currentPageNum
+      }
+      // we have a page range
+      else {
+        formattedPageNums += `${pageNums[pageRangeStartIdx]}-${pageNums[pageRangeStopIdx]}`
+      }
+      if (i !== pageNums.length - 1) {
+        formattedPageNums += ", "
+      }
+
+      // Since we've added a page range
+      // need to get start idx set up for next page range
+      pageRangeStartIdx = i + 1
+    }
+  }
+  return formattedPageNums
+}
