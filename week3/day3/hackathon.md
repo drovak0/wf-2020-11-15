@@ -1,7 +1,5 @@
 # Hackathon / Battle Buddy Assignments
 
-- [ ] send assigned groups in mattermost
-
 - Description: Groups of 2-3 for Python
 - Goal: keep each other accountable
 - Check in daily
@@ -74,8 +72,9 @@ class Deck:
 # card2.show_card()
 # card3.show_card()
 
-myDeck = Deck()
-for card in myDeck.cards:
+my_deck = Deck()
+for card in my_deck.cards:
     card.show_card()
+
 
 ```
