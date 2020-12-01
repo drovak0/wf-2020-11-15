@@ -104,7 +104,7 @@ class Player():
 aishah = Player('Aishah')
 mohammed = Player('Mohammed')
 print('*'*50)
-print('Aisha is stealing the cards, while no one is looking.')
+print('Aisha is drawing the cards.')
 my_deck.draw_card(aishah)
 my_deck.draw_card(aishah)
 my_deck.draw_card(aishah)
