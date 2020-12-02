@@ -14,6 +14,7 @@ def hello_world():
 # for a route '/users/____/____', two parameters in the url get passed as username and idcopy
 @app.route('/users/<usernamez>/<idz>')
 def show_user_profile(usernamez, idz):
+
     print(usernamez)
     print(idz)
 
