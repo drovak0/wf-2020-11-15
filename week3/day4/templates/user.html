@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello {{ username_in_template }}</h1>
+  <h2>Your id is: {{ id_in_template }}</h2>
+  <ul>
+    {% for user in users %}
+    <li>{{ user.name }} {{ user.age }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
