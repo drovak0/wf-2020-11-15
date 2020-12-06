@@ -1,4 +1,4 @@
-// Theme: Strings & Dicts
+// Theme: Strings & Objects
 
 /*
   Given an array of strings
