@@ -1,6 +1,4 @@
-# QA
-
-## Recommended podcasts
+# Recommended podcasts
 
 - [base cs](https://www.codenewbie.org/basecs) - fundamentals
 - [command_line heroes](https://www.redhat.com/en/command-line-heroes) - stories
