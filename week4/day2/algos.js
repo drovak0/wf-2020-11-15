@@ -13,7 +13,12 @@
 
 function stringDedupe(str) {
   let distinctStr = ""
-  const seen = {}
+  const seen = {
+    // 'o': true,
+    // 'l': true,
+    // 'e': true,
+    // 'h': true,
+  }
 
   // loop backwards to include last occurrence
   for (let i = str.length - 1; i >= 0; --i) {
@@ -35,6 +40,29 @@ function strDedupe(str) {
   }
   return distinctStr
 }
+
+// is longStr contains compareStr?
+function includes(compareStr, longStr) {
+  for(var i = 0; i < longStr.length; i++) {
+    // var char = longStr[i]
+
+    var slice = longStr.slice(i, i + compareStr.length)
+    console.log(slice, compareStr.length)
+    // slicing a string == compareStr.length
+    // compare the slice to the compareStr
+    // How to support multiple str.length > 1?
+    if (slice == compareStr) {
+      return true
+    }
+  }
+  return false
+}
+
+const strToLookAt = "helloo"
+const strToCheck = "oo"
+const expected3 = true
+
+console.log(includes(strToCheck, strToLookAt)) // true
 
 /*****************************************************************************/
 /*
