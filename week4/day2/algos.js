@@ -11,7 +11,30 @@
 // const str2 = "helloo"
 // const expected2 = "helo"
 
-function stringDedupe(str) {}
+function stringDedupe(str) {
+  let distinctStr = ""
+  const seen = {}
+
+  // loop backwards to include last occurrence
+  for (let i = str.length - 1; i >= 0; --i) {
+    if (!seen[str[i]]) {
+      distinctStr = str[i] + distinctStr
+      seen[str[i]] = true
+    }
+  }
+  return distinctStr
+}
+
+function strDedupe(str) {
+  let distinctStr = ""
+
+  for (const char of str) {
+    if (distinctStr.includes(char) === false) {
+      distinctStr += char
+    }
+  }
+  return distinctStr
+}
 
 /*****************************************************************************/
 /*
@@ -30,4 +53,23 @@ function stringDedupe(str) {}
 // const str3 = "abc def ghi";
 // const expected3 = "cba fed ihg";
 
-function reverseWords(str) {}
+function reverseWordsSplit(wordsStr) {
+  const words = wordsStr.split(" ")
+  let wordsReversed = ""
+
+  for (const word of words) {
+    let reversedWord = ""
+
+    for (let i = word.length - 1; i >= 0; --i) {
+      reversedWord += word[i]
+    }
+
+    // add a space in front of word if it's not the first word
+    if (wordsReversed.length > 0) {
+      reversedWord = " " + reversedWord
+    }
+    wordsReversed += reversedWord
+  }
+  return wordsReversed
+}
+
