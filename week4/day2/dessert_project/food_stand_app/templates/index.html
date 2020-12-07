@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to Chris's(كريس) Hellowaa, Ma sha alah</h1>
+  <h1>حلويات كريس ماشاء الله</h1>
+
+  <h2>All the desserts</h2>
+  <table>
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dessert in dessertz %}
+      <tr>
+        <td>{{ dessert.id }}</td>
+        <td>{{ dessert.name }}</td>
+        <td>{{ dessert.description }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3>Add a dessert</h3>
+  <form action="/add_dessert" method="post">
+    {% csrf_token %}
+    <p>Name: <input type="text" name="form_name"></p>
+    <p>Description: <input type="text" name="form_description"></p>
+    <button type="submit">Add it!</button>
+  </form>
+</body>
+</html>
