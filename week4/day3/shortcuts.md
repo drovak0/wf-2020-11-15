@@ -1,8 +1,33 @@
 # VS Code Shortcuts
 
-- multi-line cursor
 - multi-cursor drop
+- multi-line cursor
 - select multiples of same highlight
-- search and replace
+- line duplicate
+- search and replace on a page
+- search folder
 - opening side panel
 - bulk move code
+- Copy && Paste
+- Word wrap
+- Settings
+- Extensions
+- Word highlight
+- Word jump
+- End of line jump
+- Code folding
+- auto code for loop
+- custom code snippets
+- convert tab to spaces
+- indent multiple lines left or right
+- comment
+
+## Terminal
+
+- history
+- autocomplete
+
+## Resources
+
+- [The Super Mario Effect - Tricking Your Brain into Learning More](https://www.youtube.com/watch?v=9vJRopau0g0) - Monica
+
