@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Shirt Factory!</h1>
+  <!-- Add a designer -->
+  <h2>Add a designer</h2>
+  <form action="/add_designer" method="post">
+    {% csrf_token %}
+    <p>Name: <input type="text" name="name"></p>
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Add a shirt -->
+  <h2>Add a shirt</h2>
+  <form action="/add_shirt" method="post">
+    {% csrf_token %}
+    <p>Brand: <input type="text" name="brand"></p>
+    <p>Size: <input type="text" name="size"></p>
+    <p>Description: <input type="text" name="description"></p>
+
+    <p>Designer:
+      <select name="designer">
+        {% for designer in all_designers %}
+        <option value="{{ designer.id }}">{{ designer.name }}</option>
+        {% endfor %}
+      </select>
+    </p>
+
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Display all the designers and shirts -->
+  <h2>Display everything</h2>
+  <ul>
+    {% for designer in all_designers %}
+    <li>
+      <p>{{ designer.name }}</p>
+      <ul>
+        {% for shirt in designer.shirtz.all %}
+        <li>{{ shirt.brand }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
