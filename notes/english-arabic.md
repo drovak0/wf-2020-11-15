@@ -24,25 +24,31 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 ## Responses
 
-| English                  |        Arabic         |
-| :----------------------- | :-------------------: |
-| Thanks                   |       Shukraan        |
-| You’re welcome           |         Afwan         |
-| If God wants             |        Inshala        |
-| It’s fine                |     Alhamdulillah     |
-| Good luck                |     Be al tawfek      |
-| Good job                 |        Momtaz         |
-| Not allowed              |         Haram         |
-| Ok                       |         Tamam         |
-| action                   |         ebda          |
-| that is good             |     Hatha jayyed      |
-| wow                      |      Mashaallah       |
-| kingdom                  |       mamlakah        |
-| Yes                      |         naan          |
-| No                       |          la           |
-| Prayer time              |      waqt alsala      |
-| I forgot                 |        necite         |
-| copy & paste             |    nsikh wa lasaq     |
+| English        |     Arabic     |
+| :------------- | :------------: |
+| Thanks         |    Shukraan    |
+| You’re welcome |     Afwan      |
+| If God wants   |    Inshala     |
+| It’s fine      | Alhamdulillah  |
+| Not allowed    |     Haram      |
+| Ok             |     Tamam      |
+| Action         |      ebda      |
+| Kingdom        |    mamlakah    |
+| Yes            |      naan      |
+| No             |       la       |
+| Prayer time    |  waqt alsala   |
+| I forgot       |     necite     |
+| Copy & paste   | nsikh wa lasaq |
+| I know         |     aaref      |
+
+## Compliments
+
+| English      |    Arabic    |
+| :----------- | :----------: |
+| Good luck    | Be al tawfek |
+| Good job     |    Momtaz    |
+| That is good | Hatha jayyed |
+| Wow          |  Mashaallah  |
 
 ## Counting
 
