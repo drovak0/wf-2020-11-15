@@ -15,11 +15,11 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Did that answer your question? | hal hatha jawab ala swalek? |
 | Does this make sense?          |     hal lehatha maenaa?     |
 | Are there any questions?       |        Fee ay soaal         |
-| five                     |        khamsa         |
-| four                     |         arbaa         |
-| three                    |        thlatha        |
-| two                      |        athnan         |
-| one                      |         waed          |
+| five                           |           khamsa            |
+| four                           |            arbaa            |
+| three                          |           thlatha           |
+| two                            |           athnan            |
+| one                            |            waed             |
 
 ## Greetings
 
@@ -58,6 +58,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | I forgot       |     necite     |
 | Copy & paste   | nsikh wa lasaq |
 | I know         |     aaref      |
+| Fly            |    Tiyaran     |
 
 ## Compliments
 
