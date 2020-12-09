@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Unlimited power!!!!!!!</h1>
+
+    <form action="/add_power" method="post">
+      {% csrf_token %}
+      <p>Name<input type="text" name="name" /></p>
+      <p>Description<input type="text" name="description" /></p>
+      <p>Image URL<input type="text" name="image" /></p>
+      <button type="submit">Add Power!</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Image</td>
+          <td>Name</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for power in all_powers %}
+        <tr>
+          <td>
+            <img
+              src="{{ power.image }}"
+              alt="{{ power.name }}"
+              style="width: 100px; height: 100px"
+            />
+          </td>
+          <td><a href="/powers/{{ power.id }}">{{ power.name }}</a></td>
+        </tr>
+        {% endfor %}
+        <!-- What error would we have it we forgot ^ ? -->
+      </tbody>
+    </table>
+  </body>
+</html>

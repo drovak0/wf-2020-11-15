@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>{{ power_to_display.name }}</h1>
+    <img src="{{ power_to_display.image }}" alt="{{ power_to_display.name }}" />
+    <p>{{ power_to_display.description }}</p>
+
+    <ul>
+      {% for hero in power_to_display.heroes.all %}
+      <li>{{ hero.name }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Add a hero</h3>
+    <form action="/add_power_to_hero" method="post">
+      {% csrf_token %}
+      <input type="hidden" name="power_id" value="{{ power_to_display.id }}">
+      <p>
+        <select name="hero_id">
+          {% for hero in all_heroes %}
+            {% if hero not in power_to_display.heroes.all %}
+            <option value="{{ hero.id }}">{{ hero.name }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </p>
+
+      <button type="submit">Power up!</button>
+    </form>
+  </body>
+</html>
