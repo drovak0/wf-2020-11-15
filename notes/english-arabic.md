@@ -3,6 +3,24 @@
 Chris's(كريس) Hellowaa, Ma sha alah
 حلويات كريس ماشاء الله
 
+## Chris's favorite <3
+
+| English                        |           Arabic            |
+| :----------------------------- | :-------------------------: |
+| Good morning                   |         Sabah alkhr         |
+| Welcome again                  |    Ahlan becom mojadadan    |
+| I’m back                       |            Rajat            |
+| I forgot                       |           necite            |
+| Good job                       |           Momtaz            |
+| Did that answer your question? | hal hatha jawab ala swalek? |
+| Does this make sense?          |     hal lehatha maenaa?     |
+| Are there any questions?       |        Fee ay soaal         |
+| five                     |        khamsa         |
+| four                     |         arbaa         |
+| three                    |        thlatha        |
+| two                      |        athnan         |
+| one                      |         waed          |
+
 ## Greetings
 
 | English                  |        Arabic         |
@@ -18,9 +36,9 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | I will see you tomorrow  |    Ashofkom bukra     |
 | Enjoy your weekend       |      Etla saida       |
 | hello my friends         |  marhaba ya asdeqaee  |
-| I have returned          |       Lagd audt       |
+| I have returned          |      Laqad audt       |
 | I’m back                 |         Rajat         |
-| I’m here                 |        Anahuna        |
+| I’m here                 |       Ana huna        |
 
 ## Responses
 
@@ -75,6 +93,10 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Does this make sense?                                                 |                  hal lehatha maenaa?                  |
 | Are there any questions?                                              |                     Fee ay soaal                      |
 | How are you?                                                          |                      Kaef halkum                      |
+| What did you do this weekend?                                         |                matha fahlt fe alejaza?                |
+| Why are you still here?                                               |                   lematha ant hona?                   |
+| Where is the restroom?                                                |                   ayn dorat almyah?                   |
+| I want to order chicken.                                              |                 ored an atlob aldajaj                 |
 
 ## Writing
 
@@ -82,8 +104,4 @@ Hahah هههههههههه
 
 ## Need translations
 
-- What did you do this weekend?
-- Where is the restroom?
-- I want to order chicken.
-- Why are you still here?
 - You should be in a breakout room.
