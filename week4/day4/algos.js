@@ -20,7 +20,19 @@
 // const rotateAmnt4 = 4
 // const expected4 = "orldHello W"
 
-function rotateStr(str, n) {}
+function rotateStr(str, n) {
+  let res = ""
+  let rotatedSubStr = ""
+
+  for (let i = 0; i < str.length; i++) {
+    if (i >= str.length - n) {
+      rotatedSubStr += str[i]
+    } else {
+      res += str[i]
+    }
+  }
+  return rotatedSubStr + res
+}
 
 
 /*****************************************************************************/
@@ -40,4 +52,9 @@ function rotateStr(str, n) {}
 // const expected2 = false;
 // // Explanation: all same letters in 2nd string, but out of order
 
-function isRotation(s1, s2) {}
+function isRotation(s1, s2) {
+  if (s1.length !== s2.length || s1 === s2) {
+    return false
+  }
+  return (s1 + s1).includes(s2)
+}
