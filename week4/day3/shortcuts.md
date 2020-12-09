@@ -21,6 +21,7 @@
 - convert tab to spaces
 - indent multiple lines left or right
 - comment
+- emmet html shortcurts table>thead
 
 ## Terminal
 

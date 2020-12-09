@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Heroes + Powers!</h1>
+
+  <h2>All Heroes</h2>
+  <table>
+    <thead>
+      <tr>
+        <td>Image</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Powers</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for hero in all_heroes %}
+      <tr>
+        <td><img src="{{ hero.image }}" alt="{{ hero.name }}" style="width: 100px; height: 100px;"></td>
+        <td>{{ hero.name }}</td>
+        <td>{{ hero.description }}</td>
+        <td>
+          {% for power in hero.powers.all %}
+            {{ power.name }},
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+      <!-- What error would we have it we forgot ^ ? -->
+    </tbody>
+  </table>
+
+  <h2>All Powers</h2>
+  <table>
+    <thead>
+      <tr>
+        <td>Image</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Heroes</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for power in all_powers %}
+      <tr>
+        <td><img src="{{ power.image }}" alt="{{ power.name }}" style="width: 100px; height: 100px;"></td>
+        <td>{{ power.name }}</td>
+        <td>{{ power.description }}</td>
+        <td>
+          {% for hero in power.heroes.all %}
+            {{ hero.name }},
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+      <!-- What error would we have it we forgot ^ ? -->
+    </tbody>
+  </table>
+
+  <h3>Add a power to a hero</h3>
+  <form action="/add_power_to_hero" method="post">
+    {% csrf_token %}
+    <p>Select a hero</p>
+    <p>
+      <select name="hero">
+        {% for hero in all_heroes %}
+        <option value="{{ hero.id }}">{{ hero.name }}</option>
+        {% endfor %}
+      </select>
+    </p>
+
+    <p>Select a power</p>
+    <p>
+      <select name="power">
+        {% for power in all_powers %}
+        <option value="{{ power.id }}">{{ power.name }}</option>
+        {% endfor %}
+      </select>
+    </p>
+
+    <button type="submit">Power up!</button>
+  </form>
+</body>
+</html>
