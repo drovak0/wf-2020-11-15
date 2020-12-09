@@ -14,10 +14,10 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Good bye                 |      Ma alslamh       |
 | Good night               |      Masa alnoor      |
 | Welcome again            | Ahlan becom mojadadan |
-| Sweet dreams             |     Ahalam saadia     |
+| Sweet dreams             |     Ahalam saaida     |
 | I will see you tomorrow  |    Ashofkom bukra     |
 | Enjoy your weekend       |      Etla saida       |
-| hello my friend          |  marhaba ya asdeqaee  |
+| hello my friends         |  marhaba ya asdeqaee  |
 | I have returned          |       Lagd audt       |
 | I’m back                 |         Rajat         |
 | I’m here                 |        Anahuna        |
