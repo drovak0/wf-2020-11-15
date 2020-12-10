@@ -106,3 +106,15 @@ Hahah هههههههههه
 ## Need translations
 
 - You should be in a breakout room.
+- left
+- right
+- up
+- down
+- Down the hall to the left.
+- Sunday
+- Monday
+- Tuesdayday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
