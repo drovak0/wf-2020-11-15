@@ -30,13 +30,12 @@ class Location(models.Model):
 # Render
 path('locations', views.locations_show),
 path('locations/new', views.locations_new),
-path('locations/<int:location_id>', views.locations_show),
+path('locations/<int:location_id>/show', views.locations_show),
 path('locations/<int:location_id>/edit', views.locations_edit),
 # Redirect
-path('locations', views.locations_create),
-path('locations/<int:location_id>', views.locations_update),
-path('locations/<int:location_id>', views.locations_destroy),
-
+path('locations/create', views.locations_create),
+path('locations/<int:location_id>/update', views.locations_update),
+path('locations/<int:location_id>/delete', views.locations_destroy),
 ```
 
 ## CRUD
@@ -44,23 +43,36 @@ path('locations/<int:location_id>', views.locations_destroy),
 ### Create
 
 ```python
-
+Location.objects.create(
+    name='',
+    country='',
+    city='',
+    image=''
+)
 ```
 
 ### Read
 
 ```python
-
+# All
+Location.objects.all()
+# One
+Location.objects.get(id=1)
 ```
 
 ### Update
 
 ```python
-
+location_to_update = Location.objects.get(id=1)
+location_to_update.name = ''
+location_to_update.country = ''
+location_to_update.city = ''
+location_to_update.image = ''
+location_to_update.save()
 ```
 
 ### Delete
 
 ```python
-
+Location.objects.get(id=1).delete()
 ```

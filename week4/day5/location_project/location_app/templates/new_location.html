@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enter a new location</h1>
+    <form action="/locations/create" method="post">
+      {% csrf_token %}
+      <p>name<input type="text" name="name" /></p>
+      <p>country<input type="text" name="country" /></p>
+      <p>city<input type="text" name="city" /></p>
+      <p>image<input type="text" name="image" /></p>
+      <button type="submit">Add</button>
+    </form>
+  </body>
+</html>
