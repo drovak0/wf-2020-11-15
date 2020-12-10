@@ -7,6 +7,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 | English                        |           Arabic            |
 | :----------------------------- | :-------------------------: |
+| Hello                    |        Marhaba        |
 | Good morning                   |         Sabah alkhr         |
 | Welcome again                  |    Ahlan becom mojadadan    |
 | I’m back                       |            Rajat            |
@@ -59,6 +60,10 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Copy & paste   | nsikh wa lasaq |
 | I know         |     aaref      |
 | Fly            |    Tiyaran     |
+| up             |     a'ala      |
+| right          |     yamen      |
+| down           |     tahat      |
+| left           |      ysar      |
 
 ## Compliments
 
@@ -106,10 +111,6 @@ Hahah هههههههههه
 ## Need translations
 
 - You should be in a breakout room.
-- left
-- right
-- up
-- down
 - Down the hall to the left.
 - Sunday
 - Monday
