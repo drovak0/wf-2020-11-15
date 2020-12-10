@@ -7,7 +7,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 | English                        |           Arabic            |
 | :----------------------------- | :-------------------------: |
-| Hello                    |        Marhaba        |
+| Hello                          |           Marhaba           |
 | Good morning                   |         Sabah alkhr         |
 | Welcome again                  |    Ahlan becom mojadadan    |
 | I’m back                       |            Rajat            |
@@ -43,27 +43,28 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 ## Responses
 
-| English        |     Arabic     |
-| :------------- | :------------: |
-| Thanks         |    Shukraan    |
-| You’re welcome |     Afwan      |
-| If God wants   |    Inshala     |
-| It’s fine      | Alhamdulillah  |
-| Not allowed    |     Haram      |
-| Ok             |     Tamam      |
-| Action         |      ebda      |
-| Kingdom        |    mamlakah    |
-| Yes            |      naan      |
-| No             |       la       |
-| Prayer time    |  waqt alsala   |
-| I forgot       |     necite     |
-| Copy & paste   | nsikh wa lasaq |
-| I know         |     aaref      |
-| Fly            |    Tiyaran     |
-| up             |     a'ala      |
-| right          |     yamen      |
-| down           |     tahat      |
-| left           |      ysar      |
+| English                |          Arabic           |
+| :--------------------- | :-----------------------: |
+| Thanks                 |         Shukraan          |
+| You’re welcome         |           Afwan           |
+| If God wants           |          Inshala          |
+| It’s fine              |       Alhamdulillah       |
+| Not allowed            |           Haram           |
+| Ok                     |           Tamam           |
+| Action                 |           ebda            |
+| Kingdom                |         mamlakah          |
+| Yes                    |           naan            |
+| No                     |            la             |
+| Prayer time            |        waqt alsala        |
+| I forgot               |          necite           |
+| Copy & paste           |      nsikh wa lasaq       |
+| I know                 |           aaref           |
+| Fly                    |          Tiyaran          |
+| up                     |           a'ala           |
+| right                  |           yamen           |
+| down                   |           tahat           |
+| left                   |           ysar            |
+| Wait one moment please | Antader lahdah men fudlik |
 
 ## Compliments
 
