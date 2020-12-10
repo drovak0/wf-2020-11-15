@@ -52,6 +52,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Not allowed            |           Haram           |
 | Ok                     |           Tamam           |
 | Action                 |           ebda            |
+| Of course              |          tobaan           |
 | Kingdom                |         mamlakah          |
 | Yes                    |           naan            |
 | No                     |            la             |
