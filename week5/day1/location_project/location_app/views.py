@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.contrib import messages
 from django.shortcuts import redirect, render
 
@@ -7,7 +9,10 @@ from .models import Location
 
 
 def locations_new(request):
-    return render(request, 'new_location.html')
+    context = {
+        'today': date.today()
+    }
+    return render(request, 'new_location.html', context)
 
 
 def locations_create(request):
@@ -26,7 +31,8 @@ def locations_create(request):
             name=request.POST['name'],
             country=request.POST['country'],
             city=request.POST['city'],
-            image=request.POST['image']
+            image=request.POST['image'],
+            first_opened_date=request.POST['first_opened_date']
         )
         # return redirect('/locations/' + str(newly_created_location.id))
         return redirect(f'/locations/{newly_created_location.id}')
@@ -71,6 +77,7 @@ def locations_update(request, location_id):
         location_to_update.country = request.POST['country']
         location_to_update.city = request.POST['city']
         location_to_update.image = request.POST['image']
+        location_to_update.first_opened_date = request.POST['first_opened_date']
         location_to_update.save()
         return redirect(f'/locations/{location_id}')
 

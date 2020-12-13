@@ -10,6 +10,7 @@
   <h1>{{ location.name  }}</h1>
   <p>{{ location.country  }}</p>
   <p>{{ location.city  }}</p>
+  <p>{{ location.first_opened_date | date:"D d M Y"  }}</p>
   <img src="{{ location.image  }}" alt="{{ location.name  }}" style="width:500px;">
 </body>
 </html>

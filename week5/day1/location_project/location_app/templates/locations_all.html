@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>All Locations</h1>
+    <h2>You have a total of {{ all_locations | length }} locations.</h2>
     <ul>
       {% for location in all_locations %}
       <li><a href="/locations/{{ location.id }}">{{ location.name }}</a> | <a href="/locations/{{ location.id }}/delete">delete</a></li>
