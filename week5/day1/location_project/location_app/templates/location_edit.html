@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Edit {{ location.name }}</h1>
+    <form action="/locations/{{ location.id }}/update" method="post">
+      {% csrf_token %}
+      <p>name<input type="text" name="name" value="{{ location.name }}" /></p>
+      <p>
+        country<input
+          type="text"
+          name="country"
+          value="{{ location.country }}"
+        />
+      </p>
+      <p>city<input type="text" name="city" value="{{ location.city }}" /></p>
+      <p>
+        image<input type="text" name="image" value="{{ location.image }}" />
+      </p>
+      <button type="submit">Edit</button>
+    </form>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+        {{ message }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
