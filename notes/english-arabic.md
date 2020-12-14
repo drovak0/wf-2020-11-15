@@ -35,6 +35,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Welcome again            | Ahlan becom mojadadan |
 | Sweet dreams             |     Ahalam saaida     |
 | I will see you tomorrow  |    Ashofkom bukra     |
+| I will see you later     |   Ashofkom laheqan    |
 | Enjoy your weekend       |      Etla saida       |
 | hello my friends         |  marhaba ya asdeqaee  |
 | I have returned          |      Laqad audt       |
@@ -66,6 +67,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | down                   |           tahat           |
 | left                   |           ysar            |
 | Wait one moment please | Antader lahdah men fudlik |
+| Finally                |          akheran          |
 
 ## Compliments
 
