@@ -7,11 +7,15 @@
 - [x] hash passwords
 - [x] set up login
 
-- [ ] add validations
-- [ ] add new field (first_name, last_name)
-- [ ] confirm password
-- [ ] username must be unique
-- [ ] birthday ? 🤔 must be a certain age
+- [x] make key error from html
+- [x] add validation register
+- [x] confirm password
+- [x] add new field (first_name)
+
+Bonus
+
+- [x] username must be unique
+- [x] birthday ? 🤔 must be a certain age
 
 ## bcrypt
 
