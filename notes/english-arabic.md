@@ -71,7 +71,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 | English      |    Arabic    |
 | :----------- | :----------: |
-| Good luck    | Be al tawfek |
+| Good luck    |   Betawfek   |
 | Good job     |    Momtaz    |
 | That is good | Hatha jayyed |
 | Wow          |  Mashaallah  |
