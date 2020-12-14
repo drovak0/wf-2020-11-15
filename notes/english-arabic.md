@@ -10,6 +10,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Hello                          |           Marhaba           |
 | Good morning                   |         Sabah alkhr         |
 | Welcome again                  |    Ahlan becom mojadadan    |
+| It’s fine                      |        Alhamdulillah        |
 | I’m back                       |            Rajat            |
 | I forgot                       |           necite            |
 | Good job                       |           Momtaz            |
