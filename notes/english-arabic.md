@@ -10,19 +10,26 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Hello                          |           Marhaba           |
 | Good morning                   |         Sabah alkhr         |
 | Welcome again                  |    Ahlan becom mojadadan    |
-| It’s fine                      |        Alhamdulillah        |
-| I’m back                       |            Rajat            |
-| I forgot                       |           necite            |
-| Good job                       |           Momtaz            |
+| Are there any questions?       |        Fee ay soaal         |
+| Why are you still here?        |      lematha ant hona?      |
+| Wait one moment please         |  Antader lahdah men fudlik  |
 | Did that answer your question? | hal hatha jawab ala swalek? |
 | Does this make sense?          |     hal lehatha maenaa?     |
-| Are there any questions?       |        Fee ay soaal         |
+| It’s fine                      |        Alhamdulillah        |
+| Of course                      |           tobaan            |
+| I’m here                       |          Ana huna           |
+| I’m back                       |            Rajat            |
+| I forgot                       |           necite            |
+| Copy & paste                   |       nsikh wa lasaq        |
+| Wow                            |         Mashaallah          |
+| Good luck                      |          Betawfek           |
+| Good job                       |           Momtaz            |
+| That is good                   |        Hatha jayyed         |
 | five                           |           khamsa            |
 | four                           |            arbaa            |
 | three                          |           thlatha           |
 | two                            |           athnan            |
 | one                            |            waed             |
-| Wow                            |         Mashaallah          |
 
 ## Greetings
 
