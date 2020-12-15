@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ahlan becom {{ user_logged_in.first_name }} to the Games page!</h1>
+    <a href="/logout">Logout</a>
+
+    <h2>Add a game</h2>
+    <form action="/games/create" method="post">
+      {% csrf_token %}
+      <p>name<input type="text" name="name" /></p>
+      <button type="submit">Add</button>
+    </form>
+
+    <h3>Games on Sale</h3>
+    <table>
+      <thead>
+        <tr>
+          <td>name</td>
+          <td>uploaded_by</td>
+          <td>on_sale</td>
+          <td>total_favs</td>
+          <td>action</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for game in all_games_on_sale %}
+        <tr>
+          <td>{{ game.name }}</td>
+          <td>{{ game.uploaded_by.username }}</td>
+          <td>{{ game.on_sale }}</td>
+          <td>{{ game.favorited_by.all | length }}</td>
+          <td>
+            {% if user_logged_in in game.favorited_by.all %}
+            <a href="/games/{{ game.id }}/unfavorite">💔</a>
+            {% else %}
+            <a href="/games/{{ game.id }}/favorite">💖</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3>Games NOT on Sale</h3>
+    <table>
+      <thead>
+        <tr>
+          <td>name</td>
+          <td>uploaded_by</td>
+          <td>on_sale</td>
+          <td>total_favs</td>
+          <td>action</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for game in all_games_not_on_sale %}
+        <tr>
+          <td>{{ game.name }}</td>
+          <td>{{ game.uploaded_by.username }}</td>
+          <td>{{ game.on_sale }}</td>
+          <td>{{ game.favorited_by.all | length }}</td>
+          <td>
+            {% if game.uploaded_by == user_logged_in %}
+            <a href="/games/{{ game.id }}/mark_for_sale">put on sale</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
