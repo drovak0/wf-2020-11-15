@@ -30,26 +30,30 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | three                          |           thlatha           |
 | two                            |           athnan            |
 | one                            |            waed             |
+| Try it again                   |        Out mojadada         |
+| No problem                     |      la mushkila adee       |
 
 ## Greetings
 
-| English                  |        Arabic         |
-| :----------------------- | :-------------------: |
-| Hello                    |        Marhaba        |
-| My name is Chris         |    Ana esmi Chris     |
-| Good morning             |      Sabah alkhr      |
-| Good afternoon / evening |     Masa alkhayr      |
-| Good bye                 |      Ma alslamh       |
-| Good night               |      Masa alnoor      |
-| Welcome again            | Ahlan becom mojadadan |
-| Sweet dreams             |     Ahalam saaida     |
-| I will see you tomorrow  |    Ashofkom bukra     |
-| I will see you later     |   Ashofkom laheqan    |
-| Enjoy your weekend       |      Etla saida       |
-| hello my friends         |  marhaba ya asdeqaee  |
-| I have returned          |      Laqad audt       |
-| I’m back                 |         Rajat         |
-| I’m here                 |       Ana huna        |
+| English                  |            Arabic             |
+| :----------------------- | :---------------------------: |
+| Hello                    |            Marhaba            |
+| My name is Chris         |        Ana esmi Chris         |
+| Good morning             |          Sabah alkhr          |
+| Good afternoon / evening |         Masa alkhayr          |
+| Good bye                 |          Ma alslamh           |
+| Good night               |          Masa alnoor          |
+| Welcome again            |     Ahlan becom mojadadan     |
+| Sweet dreams             |         Ahalam saaida         |
+| I will see you tomorrow  |        Ashofkom bukra         |
+| I will see you later     | Ashofkom laheqan or mojadanan |
+| Enjoy your weekend       |          Etla saida           |
+| hello my friends         |      marhaba ya asdeqaee      |
+| I have returned          |          Laqad audt           |
+| I’m back                 |             Rajat             |
+| I’m here                 |           Ana huna            |
+| More                     |             Ziada             |
+| No problem               |       la mushkila adee        |
 
 ## Responses
 
@@ -77,6 +81,8 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | left                   |           ysar            |
 | Wait one moment please | Antader lahdah men fudlik |
 | Finally                |          akheran          |
+| Try it again           |       Out mojadada        |
+| More                   |           Ziada           |
 
 ## Compliments
 
@@ -116,6 +122,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Why are you still here?                                               |                   lematha ant hona?                   |
 | Where is the restroom?                                                |                   ayn dorat almyah?                   |
 | I want to order chicken.                                              |                 ored an atlob aldajaj                 |
+| I will go to lunch                                                    |                  Al an adhab alghada                  |
 
 ## Writing
 
@@ -132,3 +139,4 @@ Hahah هههههههههه
 - Thursday
 - Friday
 - Saturday
+  I will go to lunch now
