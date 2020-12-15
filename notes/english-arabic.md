@@ -22,6 +22,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | three                          |           thlatha           |
 | two                            |           athnan            |
 | one                            |            waed             |
+| Wow                            |         Mashaallah          |
 
 ## Greetings
 
