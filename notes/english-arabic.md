@@ -32,6 +32,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | one                            |            waed             |
 | Try it again                   |        Out mojadada         |
 | No problem                     |      la mushkila adee       |
+| I will see you tomorrow        |       Ashofkom bukra        |
 
 ## Greetings
 
