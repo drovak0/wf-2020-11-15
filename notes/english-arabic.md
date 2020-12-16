@@ -44,7 +44,8 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Good afternoon / evening |         Masa alkhayr          |
 | Good bye                 |          Ma alslamh           |
 | Good night               |          Masa alnoor          |
-| Welcome again            |     Ahlan becom mojadadan     |
+| Welcome again - single   |      Ahlan bec mojadadan      |
+| Welcome again - plural   |    Ahlan bec om mojadadan     |
 | Sweet dreams             |         Ahalam saaida         |
 | I will see you tomorrow  |        Ashofkom bukra         |
 | I will see you later     | Ashofkom laheqan or mojadanan |
