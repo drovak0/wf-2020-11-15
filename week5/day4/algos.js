@@ -4,6 +4,13 @@
   using the standard US denominations
 */
 
+// const us_dollar = {
+//   quarter: 25,
+//   dime: 10,
+//   nickel: 5,
+//   penny: 1,
+// }
+
 // const cents1 = 25
 // const expected1 = { quarter: 1 }
 
@@ -33,7 +40,7 @@ function fewestCoinChange(cents) {}
 
 // const nums2 = [3, 0, 1, 2];
 // const expected2 = null;
-// // Explanation: nothing is missing
+// Explanation: nothing is missing
 
 /*
   Bonus: now the lowest value can now be any integer (including negatives),
