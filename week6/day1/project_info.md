@@ -15,3 +15,15 @@ Project 2
 - Can expand features of project #1
 - More Mashaalah than #1
 
+Recommendations
+
+- Face detection (OpenCV)
+- Speech recognition
+- Virtual assistant ("Alexa - Turn off lights")
+- Control smart device from the web
+- Web scraper
+- Support chatbot
+- Sockets (chat, realtime updates)
+- Zoom clone
+- Mapbox
+- Single sign-on (Firebase Auth, Auth0)
