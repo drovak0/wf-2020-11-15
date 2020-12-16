@@ -1,5 +1,10 @@
 # Deployment Overview
 
-- [ ] What is deployment?
-- [ ] Why deploy our code?
-- [ ] How can we deploy?
+- [x] What is deployment?
+  - display our code on the internet
+  - public url
+- [x] Why deploy our code?
+  - public access
+  - security
+- [x] How can we deploy?
+  - cloud
