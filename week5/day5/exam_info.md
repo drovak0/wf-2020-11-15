@@ -1,6 +1,6 @@
 # Python Exam Day
 
-Exam code ``
+Exam code `61CF4bA0`
 
 ## Scoring
 
@@ -41,3 +41,12 @@ Exam code ``
 
 - Optional: Ask for a precheck before submitting
 - Black Belt: Work on deployment after exam and taking a break, sent ip address when complete
+
+## Post Exam
+
+If you need to retake
+
+- [ ] finish exam (can work together)
+- [ ] demostrate functionality
+- [ ] request new exam code
+- [ ] 2nd exam attempt expected by Dec 21 2020
