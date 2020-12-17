@@ -10,7 +10,7 @@
 - Members: Individual or group (maximum of 3)
 - Goal: Build something using Django or Flask
 
-- [ ] Fill out project info [here]()
+- [ ] Fill out project info in the Python tab [here](https://docs.google.com/spreadsheets/d/1MhOfh3lj8pPpIYqoeuMbsD2n305UtHmzh3nkM01bQWM/edit#gid=1668133038)
 - [ ] Project Idea Approval Date: Dec 22 2020
 - [ ] Live Presenations Dec 24 2020
 

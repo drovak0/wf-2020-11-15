@@ -6,7 +6,7 @@
 - Members: Individual or group (maximum of 3)
 - Goal: Implement at least (1) external library or use at least (1) 3rd party API
 
-- [ ] Fill out project info [here]()
+- [ ] Fill out project info in the Break tab [here](https://docs.google.com/spreadsheets/d/1MhOfh3lj8pPpIYqoeuMbsD2n305UtHmzh3nkM01bQWM/edit#gid=993332329)
 - [ ] Project Idea Approval Date: Dec 24 2020
 - [ ] Submission Date: Jan 2, 2020, 11:59 pm by email to cbautista@codingdojo.com
 - [ ] Recorded Presentation
