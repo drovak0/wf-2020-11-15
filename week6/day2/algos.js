@@ -52,7 +52,20 @@ function factorial(n) {}
 // const num5 = 4;
 // const expected5 = 3;
 
-// const num6 = 8;
-// const expected6 = 21;
+const num6 = 8;
+const expected6 = 21;
 
-function fibonacci(num) {}
+function fibonacci(n, memo = { 0: 0, 1: 1 }) {
+  if (n < 0) {
+    return null
+  }
+
+  if (memo[n] !== undefined) {
+    return memo[n]
+  }
+
+  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+
+  return memo[n]
+}
+console.log(fibonacci(1000))
