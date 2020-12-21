@@ -16,6 +16,7 @@
 
 ### Recommendations for Break Project Week
 
+- Payment (Stripe)
 - Face detection (OpenCV)
 - Speech recognition
 - Virtual assistant ("Alexa - Turn off lights")
