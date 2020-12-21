@@ -130,10 +130,11 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Where is the restroom?                                                |                   ayn dorat almyah?                   |
 | I want to order chicken.                                              |                 ored an atlob aldajaj                 |
 | I will go to lunch                                                    |                  Al an adhab alghada                  |
+| Enjoy your lunch                                                      |                       baileafia                       |
 
 ## Writing
 
-Hahah هههههههههه
+Hahah هههههههههههههه
 
 ## Need translations
 
