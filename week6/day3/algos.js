@@ -10,8 +10,6 @@
 
 // Walk-through
 
-
-
 /*
   Recursive Binary Search
 
