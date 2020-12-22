@@ -1,3 +1,17 @@
+// RIOT WALK
+
+// Remember this during an interview
+// Talk out loud
+
+// Repeat
+// Input
+// Output
+// Test
+
+// Walk-through
+
+
+
 /*
   Recursive Binary Search
 
