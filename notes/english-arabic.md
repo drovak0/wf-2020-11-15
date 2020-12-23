@@ -89,6 +89,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Easy                   | sa hel                                     |
 | Hard                   | sa ab                                      |
 | You are amazing!       | anti modhesha (woman) / anta modhesh (men) |
+| Bless you              | yarhamak allah                             |
 
 ## Compliments
 
