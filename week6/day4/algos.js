@@ -42,4 +42,41 @@ const str11 = "lim";
 const expected11 = ["ilm", "iml", "lim", "lmi", "mil", "mli"];
 // Order of the output array does not matter
 
-function generateAnagrams(str) {}
+function generateAnagrams(str, solutions = [], partial = "") {
+  console.log('################ Function Call ####################')
+  console.log(`str: `, str)
+  console.log(`solutions: `, solutions)
+  console.log(`partial: `, partial)
+  if (!str) {
+    solutions.push(partial)
+  }
+
+  // '123' 3*2*1 !3 = 6
+  // Factorial
+  for (let i = 0; i < str.length; i++) {
+    console.log('*************** Foor Loop Interation *********************')
+    console.log(`i: `, i);
+
+    // ''
+    const leftSlice = str.slice(0, i)
+    const rightSlice = str.slice(i + 1) // skips current letter
+    console.log(`leftSlice: `, leftSlice);
+    console.log(`rightSlice: `, rightSlice);
+    generateAnagrams(leftSlice + rightSlice, solutions, partial + str[i])
+  }
+  return solutions
+}
+
+generateAnagrams(str11)
+
+function anagrams(str, memo="", arr=[]) {
+  if (str.length == 0) {
+    arr.push(memo)
+    return arr
+  }
+  for (var i = 0; i < str.length; i++) {
+    anagrams(str.slice(0, i) + str.slice(i + 1, str.length), memo + str[i], arr)
+  }
+  return arr
+}
+console.log(anagrams("cat"))
