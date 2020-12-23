@@ -20,6 +20,11 @@ const expected2 = 1
 const num3 = 25
 const expected3 = 7
 
+const num4 = 25761
+// 21
+// 3
+const expected4 = 3
+
 function sumToOneDigit(num) {}
 
 /*****************************************************************************/
@@ -33,8 +38,8 @@ function sumToOneDigit(num) {}
   Ok to use built in methods
 */
 
-const str1 = "lim";
-const expected1 = ["ilm", "iml", "lim", "lmi", "mil", "mli"];
+const str11 = "lim";
+const expected11 = ["ilm", "iml", "lim", "lmi", "mil", "mli"];
 // Order of the output array does not matter
 
 function generateAnagrams(str) {}
