@@ -27,4 +27,57 @@
 */
 
 // Add params if needed
-function floodFill(canvas2D, startXY, newColor) {}
+// function floodFill(canvas2D, startXY, newColor) {}
+function floodFill(canvas2D, startXY, newColor, originalColor = null) {
+  console.log(canvas2D)
+  const x = startXY[0],
+    y = startXY[1]
+  if (originalColor && canvas2D[y][x] !== originalColor) {
+    return
+  }
+
+  let changed = false
+
+  if (!originalColor) {
+    originalColor = canvas2D[y][x]
+  }
+
+  if (canvas2D[y][x] === originalColor) {
+    canvas2D[y][x] = newColor
+    changed = true
+  }
+
+  if (changed) {
+    if (y - 1 >= 0) {
+      floodFill(canvas2D, [x, y - 1], newColor, originalColor)
+    }
+
+    if (x + 1 < canvas2D[0].length) {
+      floodFill(canvas2D, [x + 1, y], newColor, originalColor)
+    }
+
+    if (y + 1 < canvas2D.length) {
+      floodFill(canvas2D, [x, y + 1], newColor, originalColor)
+    }
+
+    if (x - 1 >= 0) {
+      floodFill(canvas2D, [x - 1, y], newColor, originalColor)
+    }
+  }
+
+  return canvas2D
+}
+
+
+  const canvas = [
+    [3, 2, 3, 4, 3],
+    [2, 3, 3, 4, 0],
+    [7, 3, 3, 5, 3],
+    [6, 5, 3, 4, 1],
+    [1, 2, 3, 3, 3]
+  ]
+
+  const start = [2,2]
+  const newColor = 1
+
+console.log(floodFill(canvas, start, newColor))
