@@ -1,6 +1,4 @@
 /*
-  https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/
-
   Stable sort
 
   Time Complexity
@@ -26,8 +24,6 @@ function bubbleSort(nums) {}
 /*****************************************************************************/
 
 /*
-  https://visualgo.net/en/sorting
-
   Selection sort works by iterating through the list, finding the minimum
   value, and moving it to the beginning of the list. Then, ignoring the first
   position, which is now sorted, iterate through the list again to find the
