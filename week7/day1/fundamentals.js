@@ -3,6 +3,8 @@
 // ECMA Script
 // maintains the current up-to-date standardization of JavaScript
 
+// Event Loop - https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
 // Debugging
 
 // Scope
