@@ -1,0 +1,8 @@
+.btn {
+    padding: 12px 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(30deg, rebeccapurple, magenta);
+    color: #fff;
+    border: none;
+}
