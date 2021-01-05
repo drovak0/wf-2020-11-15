@@ -5,3 +5,5 @@ py3Env/
 djangoEnv/
 __pycache__
 envFolderName/
+
+node_modules/
