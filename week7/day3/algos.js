@@ -37,7 +37,7 @@ const sortedA4 = [1, 2, 4, 5, 6, 9]
 const sortedB4 = [3, 7, 8, 10]
 const expectedMerge4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-function merge(left, right) {}
+// function merge(left, right) {}
 
 // mergeSort
 const numsOrdered = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -45,4 +45,54 @@ const numsRandomOrder = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8]
 const numsReversed = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 const expectedSort = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-function mergeSort(nums) {}
+// function mergeSort(nums) {}
+
+/*****************************************************************************/
+
+function merge(left, right) {
+  let result = []
+  let indexLeft = 0
+  let indexRight = 0
+
+  while (indexLeft < left.length && indexRight < right.length) {
+    if (left[indexLeft] < right[indexRight]) {
+      result.push(left[indexLeft])
+      indexLeft++
+    } else {
+      result.push(right[indexRight])
+      indexRight++
+    }
+  }
+
+  // in case one of the arrays has remaining items due to unequal lengths, all of those can be added
+  while (indexLeft < left.length) {
+    result.push(left[indexLeft])
+    indexLeft++
+  }
+
+  while (indexRight < right.length) {
+    result.push(right[indexRight])
+    indexRight++
+  }
+
+  return result
+
+  // one liner version of adding in any left over items
+  // return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
+}
+
+
+function mergeSort(nums) {
+  if (nums.length === 1) {
+    // return once we hit an array with a single item
+    return nums
+  }
+
+  const middle = Math.floor(nums.length / 2) // get the middle item of the array rounded down
+  const left = nums.slice(0, middle) // items on the left side
+  const right = nums.slice(middle) // items on the right side
+
+  return merge(mergeSort(left), mergeSort(right))
+}
+
+console.log(mergeSort(numsRandomOrder))
