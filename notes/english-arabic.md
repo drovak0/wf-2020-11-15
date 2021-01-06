@@ -59,37 +59,40 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 ## Responses
 
-| English                | Arabic                                     |
-| :--------------------- | :----------------------------------------- |
-| Thanks                 | Shukraan                                   |
-| You’re welcome         | Afwan                                      |
-| If God wants           | Inshala                                    |
-| It’s fine              | Alhamdulillah                              |
-| Not allowed            | Haram                                      |
-| Ok                     | Tamam                                      |
-| Action                 | ebda                                       |
-| Of course              | tobaan                                     |
-| Kingdom                | mamlakah                                   |
-| Yes                    | naan                                       |
-| No                     | la                                         |
-| Prayer time            | waqt alsala                                |
-| I forgot               | necite                                     |
-| Copy & paste           | nsikh wa lasaq                             |
-| I know                 | aaref                                      |
-| Fly                    | Tiyaran                                    |
-| up                     | a'ala                                      |
-| right                  | yamen                                      |
-| down                   | tahat                                      |
-| left                   | ysar                                       |
-| Wait one moment please | Antader lahdah men fudlik                  |
-| Finally                | akheran                                    |
-| Try it again           | Out mojadada                               |
-| More                   | Ziada                                      |
-| Beautiful              | jameel                                     |
-| Easy                   | sa hel                                     |
-| Hard                   | sa ab                                      |
-| You are amazing!       | anti modhesha (woman) / anta modhesh (men) |
-| Bless you              | yarhamak allah                             |
+| English                  | Arabic                                     |
+| :----------------------- | :----------------------------------------- |
+| Thanks                   | Shukraan                                   |
+| You’re welcome           | Afwan                                      |
+| If God wants             | Inshala                                    |
+| It’s fine                | Alhamdulillah                              |
+| Not allowed              | Haram                                      |
+| Ok                       | Tamam                                      |
+| Action                   | ebda                                       |
+| Of course                | tobaan                                     |
+| Kingdom                  | mamlakah                                   |
+| Yes                      | naan                                       |
+| No                       | la                                         |
+| Prayer time              | waqt alsala                                |
+| I forgot                 | necite                                     |
+| Copy & paste             | nsikh wa lasaq                             |
+| I know                   | aaref                                      |
+| Fly                      | Tiyaran                                    |
+| up                       | a'ala                                      |
+| right                    | yamen                                      |
+| down                     | tahat                                      |
+| left                     | ysar                                       |
+| Wait one moment please   | Antader lahdah men fudlik                  |
+| Finally                  | akheran                                    |
+| Try it again             | Out mojadada                               |
+| More                     | Ziada                                      |
+| Beautiful                | jameel                                     |
+| Easy                     | sa hel                                     |
+| Hard                     | sa ab                                      |
+| You are amazing!         | anti modhesha (woman) / anta modhesh (men) |
+| Bless you                | yarhamak allah                             |
+| oh like that             | yanni                                      |
+| oh like that in the past | yanni can                                  |
+| oh look at this          | Yanni chef                                 |
 
 ## Compliments
 
