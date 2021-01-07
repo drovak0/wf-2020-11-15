@@ -39,7 +39,7 @@ Hiring bulletin board
 - check email to confirm invitation
 - cd into where you want to save the project
 - clone project from [here](git@github.com:CBaut/mashallathon.git)
-- `git clone git@github.com:CBaut/mashallathon.git`
+- `git clone https://github.com/CBaut/mashallathon.git`
 - `cd mashallathon/mashallathon`
 - create a new branch `git checkout -b branch_name`
 - `npm install` to install node_modules (omitted by .gitignore)
