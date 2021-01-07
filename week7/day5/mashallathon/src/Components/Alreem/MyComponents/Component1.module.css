@@ -1,0 +1,19 @@
+.profile {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+  .clicked{
+    width: 230px;
+    height:180px;
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  .notclicked{
+    width: 150px;
+    height:150px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+  }

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 250px;
+    height: 460px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 65);
+}
+    
+.main h1 {
+    margin: 5px;
+    text-align: center;
+    color: rgb(255, 255, 15);
+}
+.profilePic {
+    width: 80px;
+    border-radius: 40%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.PersonalInfo h4 {
+    font-size: 18px;
+    color: rgb(255, 255, 0);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    border-bottom: 0.75px solid white;
+}
+.PersonalInfo p, .PersonalInfo span {
+    font-size: 10pt;
+    color: white;
+}
+.PersonalInfo p {
+    padding: 3px;
+    
+}
+.PersonalInfo span {
+    font-weight: bold;
+    font-size: 11pt;
+    color: rgb(255, 255, 0);
+}
+.btn {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+.btn h4{
+    color:rgb(255, 255, 0);
+}
+.searchZ{
+    color: white;
+    text-align: center;
+}

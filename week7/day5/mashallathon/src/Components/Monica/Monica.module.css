@@ -1,0 +1,113 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.main {
+    width: 250px;
+    height: 460px;
+    border: 1px dashed gray;
+    box-shadow: 1px 1px white;
+    border-radius: 10px;
+    background-image: url("https://images.alphacoders.com/436/436396.jpg");
+    background-repeat: no-repeat;
+    background-size: 460px 460px;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.main:hover {
+    opacity: 1;
+}
+
+.main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    text-align: center;
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px goldenrod;
+    
+}
+.profilePic {
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: 4px 4px goldenrod;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    /* height: 75px; */
+}
+
+.part2 {
+    margin: 10px 5px 15px 5px;
+    font-family: Arial, Helvetica,sans-serif;
+    padding: 3px;
+    border-bottom: 0.75px solid white;
+}
+.part2 h4 {
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px goldenrod;
+    border-bottom: 0.75px solid white;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.part2 p, .part2 span {
+    font-size: 10pt;
+    color: darkmagenta;
+}
+.part2 p {
+    padding: 3px;
+    text-shadow: 2px 2px white;
+
+}
+.part2 span {
+    font-weight: bold;
+    font-size: 11pt;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px goldenrod;
+}
+.btn {
+display: block;
+margin: 20px auto 0 auto;
+padding: 5px;
+border-radius: 10px;
+box-shadow: 2px 2px goldenrod;
+border: 0.75px solid white;
+}
+.btn:hover {
+    background-color: magenta;
+    box-shadow: lightgoldenrodyellow;
+}
+.monForm {
+    margin: 10px 5px 5px 5px;
+    font-family: Arial, Helvetica,sans-serif;
+    padding: 3px;
+    border-bottom: 0.75px solid white;
+}
+.monForm input{
+    display: block;
+    margin: 0 auto;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.monForm h4 {
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px goldenrod;
+    border-bottom: 0.75px solid white;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.monForm > .wordsOnScreen {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60pt;
+    background-color: black;
+    color: white;
+    width: 75%;
+    word-wrap: break-word;
+}
+
