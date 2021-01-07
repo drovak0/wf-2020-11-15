@@ -171,3 +171,5 @@ Arbaic - PC keyboard
 - Thursday
 - Friday
 - Saturday
+- What can I help you with?
+- Is there anything I can help you with?
