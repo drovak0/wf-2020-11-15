@@ -41,6 +41,7 @@ Hiring bulletin board
 - clone project from [here](git@github.com:CBaut/mashallathon.git)
 - `git clone git@github.com:CBaut/mashallathon.git`
 - `cd mashallathon`
+- create a new branch `git checkout -b branch_name`
 - `npm install` to install node_modules (omitted by .gitignore)
 - `npm start` to start the app
 - create your own components folder
