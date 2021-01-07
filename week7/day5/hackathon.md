@@ -47,6 +47,7 @@ Hiring bulletin board
 - create your own components folder
 - set width on your main component
 - create your sub components
+- stage changes `git add .`
 - commit your code `git commit -m 'enter a message here'`
 - push to repo `git push`
 - make pull request through github.com
