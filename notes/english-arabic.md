@@ -103,6 +103,12 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | That is good | Hatha jayyed |
 | Wow          | Mashaallah   |
 
+## Words
+
+| English  | Arabic     |
+| :------- | :--------- |
+| No mercy | Bela rahma |
+
 ## Counting
 
 | English | Arabic            |
