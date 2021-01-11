@@ -19,32 +19,35 @@ const expected = [1, 2, 2, 2, 6, 6, 7]
 */
 
 function orderedMultisetUnion(sortedA, sortedB) {
-  const res = []
   let idxA = 0,
     idxB = 0
+  const ret = [],
+    len1 = sortedA.length,
+    len2 = sortedB.length
 
-  while (idxA < sortedA.length || idxB < sortedB.length) {
-    if (idxA === sortedA.length) {
-      // sortedB is longer, push in all remaining sortedB nums
-      res.push(sortedB[idxB++])
-      continue
-    } else if (idxB === sortedB.length) {
-      // sortedA is longer, push in remaining sortedA nums
-      res.push(sortedA[idxA++])
-      continue
-    }
+  while (idxA < len1 && idxB < len2) {
+    console.log(ret)
+    const n1 = sortedA[idxA],
+      n2 = sortedB[idxB]
 
-    if (sortedA[idxA] === sortedB[idxB]) {
-      res.push(sortedA[idxA++])
-      idxB++ // since both were same, increment both
-    } else if (sortedA[idxA] < sortedB[idxB]) {
-      res.push(sortedA[idxA++])
+    if (n1 === n2) {
+      ret.push(n1)
+      idxA++
+      idxB++
+    } else if (n1 < n2) {
+      ret.push(n1)
+      idxA++
     } else {
-      res.push(sortedB[idxB++])
+      ret.push(n2)
+      idxB++
     }
   }
-  return res
+  // arrays might be different lengths, if any elems are remaining, concat them
+
+  return ret.concat(sortedA.slice(idxA)).concat(sortedB.slice(idxB))
 }
+
+console.log(orderedMultisetUnion(numsA, numsB))
 
 /*****************************************************************************/
 
@@ -55,12 +58,12 @@ function orderedMultisetUnion(sortedA, sortedB) {
     - top right to bottom left diagonal
 */
 
-const squareMatrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [9, 8, 9],
-];
-const expected = 2;
+// const squareMatrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [9, 8, 9],
+// ];
+// const expected = 2;
 /*
   left to right diagonal: 1 + 5 + 9 = 15
   right to left diagonal: 3 + 5 + 9 = 17
