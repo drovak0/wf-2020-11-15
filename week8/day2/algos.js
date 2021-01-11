@@ -18,7 +18,33 @@ const expected = [1, 2, 2, 2, 6, 6, 7]
   because it occurs 3 times at most in ONE set
 */
 
-function orderedMultisetUnion(sortedA, sortedB) {}
+function orderedMultisetUnion(sortedA, sortedB) {
+  const res = []
+  let idxA = 0,
+    idxB = 0
+
+  while (idxA < sortedA.length || idxB < sortedB.length) {
+    if (idxA === sortedA.length) {
+      // sortedB is longer, push in all remaining sortedB nums
+      res.push(sortedB[idxB++])
+      continue
+    } else if (idxB === sortedB.length) {
+      // sortedA is longer, push in remaining sortedA nums
+      res.push(sortedA[idxA++])
+      continue
+    }
+
+    if (sortedA[idxA] === sortedB[idxB]) {
+      res.push(sortedA[idxA++])
+      idxB++ // since both were same, increment both
+    } else if (sortedA[idxA] < sortedB[idxB]) {
+      res.push(sortedA[idxA++])
+    } else {
+      res.push(sortedB[idxB++])
+    }
+  }
+  return res
+}
 
 /*****************************************************************************/
 
@@ -41,4 +67,14 @@ const expected = 2;
   absolute difference = 2
 */
 
-function diagonalDifference(sqrMatrix) {}
+function diagonalDifference(sqrMatrix) {
+  let ltrSum = 0,
+    rtlSum = 0
+
+  for (let i = 0; i < sqrMatrix.length; i++) {
+    const row = sqrMatrix[i]
+    ltrSum += row[i]
+    rtlSum += row[row.length - i - 1]
+  }
+  return Math.abs(ltrSum - rtlSum)
+}
