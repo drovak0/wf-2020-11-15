@@ -11,8 +11,8 @@
 */
 
 const numsA = [1, 2, 2, 2, 7]
-const numsB = [2, 2, 6, 6, 7]
-const expected = [1, 2, 2, 2, 6, 6, 7]
+const numsB = [2, 2, 6, 6, 7, 8, 9, 10]
+const expected = [1, 2, 2, 2, 6, 6, 7, 8, 9, 10]
 /*
   Explanation: Every int from each set is included in the result, for dupes, like 2, include it 3 times,
   because it occurs 3 times at most in ONE set
@@ -24,9 +24,8 @@ function orderedMultisetUnion(sortedA, sortedB) {
   const ret = [],
     len1 = sortedA.length,
     len2 = sortedB.length
-
+  console.log(ret)
   while (idxA < len1 && idxB < len2) {
-    console.log(ret)
     const n1 = sortedA[idxA],
       n2 = sortedB[idxB]
 
@@ -41,10 +40,18 @@ function orderedMultisetUnion(sortedA, sortedB) {
       ret.push(n2)
       idxB++
     }
+    console.log(ret)
   }
   // arrays might be different lengths, if any elems are remaining, concat them
+  console.log(`idxA: `, idxA);
+  console.log(`idxB: `, idxB);
+  console.log(`sortedA.slice(idxA): `, sortedA.slice(idxA));
+  console.log(`sortedB.slice(idxB): `, sortedB.slice(idxB));
 
-  return ret.concat(sortedA.slice(idxA)).concat(sortedB.slice(idxB))
+
+  return ret
+          .concat(sortedA.slice(idxA))
+          .concat(sortedB.slice(idxB))
 }
 
 console.log(orderedMultisetUnion(numsA, numsB))
