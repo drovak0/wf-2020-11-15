@@ -15,7 +15,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Wait one moment please         | Antader lahdah men fudlik   |
 | Did that answer your question? | hal hatha jawab ala swalek? |
 | Does this make sense?          | hal lehatha maenaa?         |
-| It’s fine                      | alhamdu lillah              |
+| It’s fine                      | alhamdu lillah or bekar     |
 | Of course                      | tobaan                      |
 | I’m here                       | Ana huna                    |
 | I’m back                       | Rajat                       |
@@ -123,10 +123,12 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | three   | thlatha           |
 | two     | athnan            |
 | one     | waed              |
-| 16      | Seta wa eshreen   |
+| 16      | Seta eshr         |
+| 26      | Seta wa shreen    |
 | 46      | seta wa arbaen    |
 | 36      | seta wa thlatheen |
 | 100     | me a              |
+| 1000    | alf               |
 
 ## Questions/Phrases
 
