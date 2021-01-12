@@ -8,6 +8,7 @@ import Monica from './Components/Monica/Monica.jsx';
 import Murtaja from './Components/Murtaja/Murtaja.jsx';
 import Mutab from './Components/Mutab/Mutab.jsx';
 import Susie from "./Components/Susie/Susie";
+import Bushra from "./Components/Bushra/Bushra";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Demo />
       <Abdullah  />
       <Susie />
+      <Bushra />
     </div>
   )
 }

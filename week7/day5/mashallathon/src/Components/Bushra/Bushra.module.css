@@ -1,0 +1,61 @@
+.profile {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 265px;
+    height: 460px;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 10px;
+    background-image: url("https://www.publicdomainpictures.net/pictures/320000/velka/abstract-background-1583001970bC8.jpg");
+
+}
+
+.main h1 {
+    margin: 5px;
+    text-align: center;
+    color: rgb(15, 65, 228);
+}
+.Info h4 {
+    font-size: 20px;
+    color: rgb(15, 65, 228);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+.Info p, .Info span {
+    font-size: 13pt;
+    color: rgb(82, 48, 48);
+}
+.Info span {
+    font-weight: bold;
+    font-size: 14pt;
+    color: rgb(15, 65, 228);
+}
+.clickk{
+    width: 230px;
+    height:180px;
+    display: block;
+    margin-left: 52px;
+    margin-top: 20px;
+    opacity: 1;
+  }
+.click h4 {
+    font-size: 20px;
+    color: rgb(15, 65, 228);
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.click input {
+    
+    color: rgb(15, 65, 228);
+    margin-left: 25px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
