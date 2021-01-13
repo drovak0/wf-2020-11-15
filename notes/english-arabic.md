@@ -70,7 +70,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Action                   | ebda                                       |
 | Of course                | tobaan                                     |
 | Kingdom                  | mamlakah                                   |
-| Yes                      | naan                                       |
+| Yes                      | naam                                       |
 | No                       | la                                         |
 | Prayer time              | waqt alsala                                |
 | I forgot                 | necite                                     |
