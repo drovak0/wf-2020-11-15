@@ -22,7 +22,31 @@
 //   [3, 6, 7, 0, 0],
 // ]
 
-function findConsqSums(nums, targetSum) {}
+function findConsqSums(nums, targetSum) {
+  const sums = []
+
+  for (let i = 0; i < nums.length; i++) {
+    const consecNums = []
+    let sum = 0
+    let j = i
+
+    while (sum <= targetSum && j < nums.length - 1) {
+      if (sum + nums[j] <= targetSum) {
+        sum += nums[j]
+        consecNums.push(nums[j++])
+
+        if (sum === targetSum) {
+          // without slice, future additions to consecNums
+          // will be added to the already pushed consecNums via reference
+          sums.push(consecNums.slice())
+        }
+      } else {
+        break
+      }
+    }
+  }
+  return sums
+}
 
 /*****************************************************************************/
 
@@ -42,4 +66,20 @@ function findConsqSums(nums, targetSum) {}
 //   { i: 7, n: 10 },
 // ];
 
-function allNonConsecutive(sortedNums) {}
+function allNonConsecutive(sortedNums) {
+  const output = []
+
+  for (let i = 1; i < sortedNums.length; i++) {
+    const prevNum = sortedNums[i - 1]
+    const currNum = sortedNums[i]
+
+    if (prevNum + 1 !== currNum) {
+      output.push({
+        i: i,
+        n: currNum,
+      })
+    }
+  }
+  return output
+}
+
