@@ -28,7 +28,53 @@ const expected3 = [1, 2, 3]
   1 most frequent int, or 2 most frequent int, but there are 3 most frequent ints.
 */
 
-function kMostFrequent(nums, k) {}
+function kMostFrequent(nums, k) {
+  const mostFreqNums = []
+  const numToFrequency = {}
+  const frequencyToNums = {}
+  let maxFreq = 0
+
+  for (const num of nums) {
+    if (numToFrequency.hasOwnProperty(num)) {
+      numToFrequency[num]++
+
+      if (numToFrequency[num] > maxFreq) {
+        maxFreq = numToFrequency[num]
+      }
+    } else {
+      numToFrequency[num] = 1
+    }
+  }
+
+  // build a frequency table that is a reverse of the above to help avoid O(n^2)
+  // since multiple ints can have the same frequency, value must be an array of the ints that have that frequency
+  // since keys are strings, convert the numKey back to an int when adding it to the array
+  for (const numKey in numToFrequency) {
+    const frequency = numToFrequency[numKey]
+
+    if (frequencyToNums.hasOwnProperty(frequency)) {
+      frequencyToNums[frequency].push(+numKey)
+    } else {
+      // create the array with the first num found that has this frequency
+      frequencyToNums[frequency] = [+numKey]
+    }
+  }
+
+  let nextMostFreq = maxFreq
+
+  while (mostFreqNums.length < k && nextMostFreq > 0) {
+    if (
+      frequencyToNums.hasOwnProperty(nextMostFreq) &&
+      frequencyToNums[nextMostFreq].length > 0
+    ) {
+      mostFreqNums.push(frequencyToNums[nextMostFreq].pop())
+    } else {
+      // no nums have this frequency, decr to check for next most freq
+      nextMostFreq--
+    }
+  }
+  return mostFreqNums
+}
 
 /*****************************************************************************/
 
@@ -48,4 +94,18 @@ const targetSum1 = 9;
 // Order doesn't matter. Explanation: nums[0] + nums[2] = 2 + 7 = 9
 const expected1 = [0, 2];
 
-function twoSum(nums, targetSum) {}
+function twoSum(nums, targetSum) {
+  const numsAndIndices = {}
+
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i],
+      diff = targetSum - num
+
+    if (numsAndIndices.hasOwnProperty(diff)) {
+      const addendIdx = numsAndIndices[diff]
+      return [addendIdx, i]
+    }
+    numsAndIndices[num] = i
+  }
+  return []
+}
