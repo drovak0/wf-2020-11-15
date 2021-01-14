@@ -135,7 +135,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | English                                                               |                        Arabic                         |
 | :-------------------------------------------------------------------- | :---------------------------------------------------: |
 | Today we will build our first application using the Django Framework. | Alyawm sawfa nabda’a awwal tatbeek be estikdam Django |
-| Does anyone have any interesting plans this weekend?                  |   Hal endakom khtat lhatha alosbooa? or Wsh alkh6ah   |
+| Does anyone have any interesting plans this weekend?                  | Hal endakom khotat le hatha al esbua? or Wsh alkh6ah  |
 | Did that answer your question?                                        |              hal hatha jawab ala swalek?              |
 | Does this make sense?                                                 |                  hal lehatha maenaa?                  |
 | Are there any questions?                                              |                     Fee ay soaal                      |
