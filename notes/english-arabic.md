@@ -93,6 +93,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | oh like that             | yanni                                      |
 | oh like that in the past | yanni can                                  |
 | oh look at this          | Yanni chef                                 |
+| maybe                    | Mumkin                                     |
 
 ## Compliments
 
@@ -146,6 +147,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | I want to order chicken.                                              |                 ored an atlob aldajaj                 |
 | I will go to lunch                                                    |                  Al an adhab alghada                  |
 | Enjoy your lunch                                                      |                       baileafia                       |
+| Can you please delay the exam?                                        |              Mumkin te adjel alekhetbar               |
 
 ## Writing
 
