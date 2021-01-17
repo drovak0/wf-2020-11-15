@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "axios"
 import React, { useEffect, useState } from "react"
-import PersonForm from "./components/PersonForm"
-import PersonList from "./components/PersonList"
+import PersonForm from "../components/PersonForm"
+import PersonList from "../components/PersonList"
 
 export default () => {
   const [people, setPeople] = useState([])
@@ -14,11 +14,15 @@ export default () => {
     })
   }, [])
 
+  const removeFromDom = (personId) => {
+    setPeople(people.filter((person) => person._id != personId))
+  }
+
   return (
     <div>
       <PersonForm />
       <hr />
-      {loaded && <PersonList people={people} />}
+      {loaded && <PersonList people={people} removeFromDom={removeFromDom} />}
     </div>
   )
 }

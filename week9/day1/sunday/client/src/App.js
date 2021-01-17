@@ -1,7 +1,8 @@
 import { Router } from "@reach/router"
 import React from "react"
-import Detail from "./components/Detail"
-import Main from "./Main"
+import Detail from "./views/Detail"
+import Main from "./views/Main"
+import Update from './views/Update'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <Main path="people/" />
         <Detail path="people/:id" />
+        <Update path="people/:id/edit" />
       </Router>
     </div>
   )
