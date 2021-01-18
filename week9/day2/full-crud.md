@@ -17,11 +17,11 @@ Schema
 
 Starting a project
 
-- `npx create-react-app client`
-- `npm install @reach/router axios`
-- views / pages / routes ['/', '/new', 'edit/:idd']
-- components
-- `npm start`
+- [x] `npx create-react-app client`
+- [x] `npm install @reach/router axios`
+- [x] views / pages / routes ['/', '/new', 'edit/:idd'] Home, New, Edit
+- [x] components [FoodList, Create New Form, DisplayOne, Button]
+- [x] `npm start`
 
 ## Server
 
@@ -31,5 +31,5 @@ Starting a project
 - [x] create folders (config, models, routes, controllers)
 - [x] `npm init -y`
 - [x] `npm install express mongoose cors`
-- [] routes ['/api/food']
+- [x] CRUD routes
 - [x] `nodemon server.js`
