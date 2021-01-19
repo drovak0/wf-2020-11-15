@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import io from "socket.io-client"
 import "./App.css"
+import CustomForm from './components/CustomForm'
 
 function App() {
   // notice that we pass a callback function to initialize the socket
@@ -31,11 +32,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Socket Test</h1>
+      {/* <h1>Socket Test</h1>
       <p>
         {message}
       </p>
-      <button onClick={handleClick}>Click Me</button>
+      <button onClick={handleClick}>Click Me</button> */}
+      <h1>Checklist && Front-end Validations</h1>
+      <CustomForm />
     </div>
   )
 }
