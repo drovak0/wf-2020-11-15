@@ -15,12 +15,13 @@ module.exports = {
           user,
         })
       })
-      .catch((err) => res.json(err))
+      .catch((err) => res.status(400).json(err))
   },
   login: async (req, res) => {
     const user = await User.findOne({ email: req.body.email })
 
     if (user === null) {
+      console.log(user)
       // email not found in users collection
       return res.sendStatus(400)
     }
@@ -50,7 +51,7 @@ module.exports = {
       .cookie("mycookie", userToken, process.env.MY_SECRET, {
         httpOnly: true,
       })
-      .json({ msg: "success!" })
+      .json({ msg: "success!", user })
   },
   getAll: (req, res) => {
     User.find({})
@@ -58,7 +59,7 @@ module.exports = {
         console.log(users)
         res.json({ users })
       })
-      .catch((err) => res.json(err))
+      .catch((err) => res.status(400).json(err))
   },
   logout: (req, res) => {
     res.clearCookie("mycookie")

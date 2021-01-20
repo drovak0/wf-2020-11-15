@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { Router } from '@reach/router';
+import { useState } from 'react';
 import './App.css';
+import Dashboard from "./views/Dashboard";
+import Login from './views/Login';
+import Register from './views/Register';
 
 function App() {
+  const [user, setUser] = useState(null)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to the app!</h1>
+      {/* Good place for a header w/ links */}
+      <Router>
+        <Register path="/register" setUser={setUser} />
+        <Login path="/login" setUser={setUser}  />
+        <Dashboard path="/dashboard" user={user} />
+      </Router>
+      {/* footer */}
     </div>
-  );
+  )
 }
 
 export default App;

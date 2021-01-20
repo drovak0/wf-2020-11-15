@@ -11,6 +11,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: [true, "Last name is required"],
     },
+    status: {
+      // 'ready' 'not ready' 'scared'
+      type: String,
+      default: "ready",
+    },
     email: {
       type: String,
       required: [true, "Email is required"],

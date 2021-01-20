@@ -5,7 +5,7 @@ const secret = process.env.MY_SECRET
 module.exports.secret = secret
 
 module.exports.authenticate = function (req, res, next) {
-  console.log(req.method, req.url)
+  console.log(req.method, req.url, req.cookies.mycookie)
   jwt.verify(req.cookies.mycookie, secret, (err, payload) => {
     if (err) {
       res.status(401).json({ verified: false })
