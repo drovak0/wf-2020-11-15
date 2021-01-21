@@ -1,6 +1,6 @@
 # MERN Exam Day
 
-Exam code ``
+Exam code `8eFBaa11`
 
 ## Scoring
 
