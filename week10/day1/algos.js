@@ -58,4 +58,19 @@ function dropIt(arr, callback) {}
 // const str6 = "abc";
 // const expected6 = false;
 
-function canStringBecomePalindrome(str) {}
+function canStringBecomePalindrome(str) {
+  if (str.length === 0) {
+    return false
+  }
+
+  const leftoverCharsMap = {}
+
+  for (const char of str) {
+    if (leftoverCharsMap.hasOwnProperty(char)) {
+      delete leftoverCharsMap[char]
+    } else {
+      leftoverCharsMap[char] = true
+    }
+  }
+  return Object.keys(leftoverCharsMap).length <= 1 ? true : false
+}
