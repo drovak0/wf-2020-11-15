@@ -24,8 +24,6 @@ function addHonorific(honorific, fullNames) {}
 /*****************************************************************************/
 
 /*
-  https://leetcode.com/problems/compare-version-numbers/
-
   Given two strings, version1, and version2, both representing version numbers
   If version1 > version2 return 1; if version1 < version2 return -1; otherwise return 0.
 
