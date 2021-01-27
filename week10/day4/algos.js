@@ -38,6 +38,7 @@ function canBuildS1FromS2(s1, s2) {}
   Given a string, find the length of the longest substring without repeating characters.
 */
 
+// Hello how are you?
 const str1 = "abcabcbb";
 const expected1 = 3;
 // Explanation: The answer is "abc", with the length of 3.
@@ -55,4 +56,33 @@ const str4 = "dvadf";
 const expected4 = 4;
 // Explanation: "vadf"
 
-function lengthOfLongestSubString(str) {}
+function lengthOfLongestSubString(str) {
+  let maxLen = 0
+  let subStr = ""
+
+  for (let i = 0; i < str.length; i++) {
+    subStr = "" // +'d'+'v'+'a'
+    // v + a+ d+ f
+    // maxLen = 3
+
+    // if remaining chars left are fewer than current maxLen
+    // it's not possible for there to be a longer subStr
+    if (str.length - i < maxLen) {
+      return maxLen
+    }
+
+    for (let j = i; j < str.length; j++) {
+      if (subStr.includes(str[j])) {
+        break
+      } else {
+        subStr += str[j]
+      }
+    }
+
+    if (subStr.length > maxLen) {
+      maxLen = subStr.length
+    }
+  }
+  return maxLen
+}
+
