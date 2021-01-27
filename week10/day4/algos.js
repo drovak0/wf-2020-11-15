@@ -1,45 +1,58 @@
-const hour1 = 5
-const min1 = 00
-const expected1 = "five o' clock"
+/*
 
-const hour2 = 5
-const min2 = 01
-const expected2 = "one minute past five"
+  Given two strings,
+  return true if the first string can be built from the letters in the 2nd string
+  Ignore case
 
-const hour3 = 5
-const min3 = 10
-const expected3 = "ten minutes past five"
+  .indexOf will only tell you if the letter is found one time
+*/
 
-const hour4 = 5
-const min4 = 15
-const expected4 = "quarter past five"
+const strA1 = "Hello World"
+const strB1 = "lloeh wordl"
+const expected1 = true
 
-const hour5 = 5
-const min5 = 30
-const expected5 = "half past five"
+const strA2 = "Hey"
+const strB2 = "hello"
+const expected2 = false
+// Explanation: second string is missing a "y"
 
-const hour6 = 5
-const min6 = 40
-const expected6 = "twenty minutes to six"
+const strA3 = "hello"
+const strB3 = "helo"
+const expected3 = false
+// Explanation: second string doesn't have enough "l" letters
 
-const hour7 = 5
-const min7 = 45
-const expected7 = "quarter to six"
+const strA4 = "hello"
+const strB4 = "lllheo"
+const expected4 = true
 
-const hour8 = 5
-const min8 = 47
-const expected8 = "thirteen minutes to six"
+const strA5 = "hello"
+const strB5 = "heloxyz"
+const expected5 = false
+// Explanation: not strB5 does not have enough "l" chars.
 
-const hour9 = 5
-const min9 = 28
-const expected9 = "twenty eight minutes past five"
+function canBuildS1FromS2(s1, s2) {}
 
-const hour10 = 12
-const min10 = 45
-const expected10 = "quarter to one"
+/*****************************************************************************/
 
-const hour11 = 12
-const min11 = 00
-const expected11 = "twelve o' clock"
+/*
+  Given a string, find the length of the longest substring without repeating characters.
+*/
 
-function timeInWords(hour, min) {}
+const str1 = "abcabcbb";
+const expected1 = 3;
+// Explanation: The answer is "abc", with the length of 3.
+
+const str2 = "bbbbb";
+const expected2 = 1;
+// Explanation: The answer is "b", with the length of 1.
+
+const str3 = "pwwkew";
+const expected3 = 3;
+/* Explanation: The answer is "wke", with the length of 3.
+  Note that the answer must be a substring, "pwke" is a subsequence and not a substring. */
+
+const str4 = "dvadf";
+const expected4 = 4;
+// Explanation: "vadf"
+
+function lengthOfLongestSubString(str) {}
