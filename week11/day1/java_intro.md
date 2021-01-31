@@ -22,6 +22,8 @@
 
 ## Guides / Resources
 
+[JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+
 [VSCode - Java Spring Boot Intro](https://code.visualstudio.com/docs/java/java-spring-boot)
 
 [Oracle - Java At A Glance](https://www.oracle.com/java/technologies/java-se-glance.html)
