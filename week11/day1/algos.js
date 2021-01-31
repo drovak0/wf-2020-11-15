@@ -4,53 +4,49 @@
 
 // Scavenger Hunting
 
-/**
- * Class to represents a single item of a SinglyLinkedList that can be
- * linked to other Node instances to form a list of linked nodes.
- */
 class Node {
   constructor(data) {
-    this.data = data;
-    /**
-     * This property is used to link this node to whichever node is next
-     * in the list. By default, this new node is not linked to any other
-     * nodes, so the setting / updating of this property will happen sometime
-     * after this node is created.
-     */
-    this.next = null;
+    this.data = data
+    this.next = null
   }
 }
 
-/**
- * Class to represent a list of linked nodes. Nodes CAN be linked together
- * without this class to form a linked list, but this class helps by providing
- * a place to keep track of the start node (head) of the list at all times and
- * as a place to add methods (functions inside an object) so that every new
- * linked list that is instantiated will inherit helpful the same helpful
- * methods, just like every array you create inherits helpful methods.
- */
 class SinglyLinkedList {
   constructor() {
     this.head = null
   }
 
-  // Methods are added below the constructor.
-  hello() {
-    console.log("world")
+  isEmpty() {
+    if (this.head === null) {
+      return true
+    } else {
+      return false
+    }
   }
 
-  // isEmpty
-  // Returns whether or not this list is empty.
-  isEmpty() {}
+  insertAtBack(data) {
+    // if list is empty
+    // add to head
+    if (this.isEmpty()) {
+      this.head = new Node(data)
+    } else {
+      // go to the end of the list
+      let runner = this.head
+      // do this until runner.next === null
+      while (runner.next !== null) runner = runner.next
 
-  // insertAtBack
-  // Creates a new node with the given data and inserts it at the back of this list.
-  // like Array.push()
-  insertAtBack(data) {}
+      runner.next = new Node(data)
+    }
+  }
 
-  // seedFromArr
-  // adds all the items from a given array to the back of this list.
-  seedFromArr(vals) {}
+  seedFromArr(vals) {
+    // for loop through array
+    for (var i = 0; i < vals.length; i++) {
+      // insert at back
+      this.insertAtBack(vals[i])
+    }
+    console.log(JSON.stringify(this.head))
+  }
 }
 
 // const emptyList = new SinglyLinkedList();
@@ -81,3 +77,25 @@ class SinglyLinkedList {
 // console.log(runner.data)
 
 // ************************************************************************************************
+
+const single = new SinglyLinkedList()
+// console.log(single.isEmpty())
+
+// single.insertAtBack(1)
+// single.insertAtBack(2)
+// single.insertAtBack(3)
+// console.log(single)
+// console.log(single.isEmpty())
+// {
+//   head: {
+//     data: 1,
+//     next: {
+//       data: 2,
+//       next: null
+//     }
+//   }
+// }
+
+single.seedFromArr([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+// {"data":1,"next":{"data":2,"next":{"data":3,"next":{"data":4,"next":{"data":5,"next":{"data":6,"next":{"data":7,"next":{"data":8,"next":{"data":9,"next":null}}}}}}}}}
