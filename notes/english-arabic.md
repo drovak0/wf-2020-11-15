@@ -106,11 +106,13 @@ Chris's(كريس) Hellowaa, Ma sha alah
 
 ## Words
 
-| English  | Arabic      |
-| :------- | :---------- |
-| No mercy | Bela rahma  |
-| Generous | Kareem      |
-| Leave it | Khali khali |
+| English   | Arabic         |
+| :-------- | :------------- |
+| No mercy  | Bela rahma     |
+| Generous  | Kareem         |
+| Leave it  | Khali khali    |
+| Thank god | Alhamdu lillah |
+| Bless you | Yrhamak allah  |
 
 ## Counting
 
