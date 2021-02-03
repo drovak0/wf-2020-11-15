@@ -20,7 +20,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | I’m here                       | Ana huna                    |
 | I’m back                       | Rajat                       |
 | I forgot                       | necite                      |
-| Copy & paste                   | nsikh wa lasaq              |
+| Copy & paste                   | naskh wa lasaq              |
 | Wow                            | Mashaallah                  |
 | Good luck                      | Betawfek                    |
 | Good job                       | Momtaz                      |
@@ -56,6 +56,8 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | I’m here                 | Ana huna                      |
 | More                     | Ziada                         |
 | No problem               | la mushkila adee              |
+| Peace be with you        | Salam alaikum                 |
+| Also with you            | Alaikum alsalam               |
 
 ## Responses
 
