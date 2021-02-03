@@ -14,9 +14,9 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Why are you still here?        | lematha ant hona?           |
 | Wait one moment please         | Antader lahdah men fudlik   |
 | Did that answer your question? | hal hatha jawab ala swalek? |
-| Does this make sense?          | hal lehatha maenaa?         |
+| Does this make sense?          | hal le hatha maa na?        |
 | It’s fine                      | alhamdu lillah or bekar     |
-| Of course                      | tobaan                      |
+| Of course                      | toban                       |
 | I’m here                       | Ana huna                    |
 | I’m back                       | Rajat                       |
 | I forgot                       | necite                      |
@@ -166,7 +166,7 @@ Arbaic - PC keyboard
 | hehehe (joking)  | hehehe   | هههههه   | iiiii   |
 | hahaha (serious) | hahaha   | هاهاهاها | ihihih  |
 | chris            | chris    | كريس     | ;vds    |
-| monica           | monica   | منيكا    | lkd;h   |
+| monica           | monica   | مونيكا   | l,kd;h  |
 | ooopsie          | ooopsie  | اوبسي    | h,fsd   |
 
 ## Alphabet
