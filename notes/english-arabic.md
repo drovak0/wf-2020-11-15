@@ -172,10 +172,10 @@ Arbaic - PC keyboard
 ## Alphabet
 
 | English Letter | Arabic |
-| :------------- | :----- |
-| a              |        |
-| b              |        |
-| c              |        |
+| :------------- | :----: |
+| a              |   ا    |
+| b              |   ب    |
+| c              |   س    |
 
 ## Need translations
 
