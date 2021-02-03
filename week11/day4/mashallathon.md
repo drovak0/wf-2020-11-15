@@ -2,10 +2,29 @@
 
 ## Theme
 
-Hello World
+### Location Abstract class
 
-- Location (jungle, country, city, ocean, house)
-- Organism
+- country
+- size
+- population ArrayList<Organism>
+
+### Liveable Interface (jungle, country, city, ocean, house)
+
+- earthquake()
+- rain()
+- wind()
+
+### Organism Abstract class
+
+- name
+- health
+- energy
+
+### Living Interface
+
+- eat()
+- move()
+- sleep()
 
 ### Ideas for attributes / methods
 
@@ -21,10 +40,10 @@ Hello World
 
 - [ ] max group size is 3
 - [ ] create 1 location per group -> inherits from Location (extends)
-- [ ] create 1 class for each person in the group -> inherit from Organism (extends)
+- [ ] create 1 organism class for each person in the group -> inherit from Organism (extends)
 - [ ] create 3 member variables for each class
 - [ ] create 3 methods for each class
-- [ ] in your test or main file create your Location and classes
+- [ ] in your test or main file create your Location and Organism
 
 ## Sensei
 
