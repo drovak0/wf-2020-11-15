@@ -29,7 +29,7 @@
 ### Ideas for attributes / methods
 
 - Monkey (health, energy, stomach)
-- Throw banana
+- Throw banana (at another organism)
 - Eat banana (store in stomach)
 
 ## Inspiration
@@ -38,7 +38,7 @@
 
 ## Requirements
 
-- [ ] max group size is 4
+- [ ] max group size is 3-4
 - [ ] create 1 location per group -> inherits from Location (extends)
 - [ ] create 1 organism class for each person in the group -> inherit from Organism (extends)
 - [ ] create 3 member variables for each class
