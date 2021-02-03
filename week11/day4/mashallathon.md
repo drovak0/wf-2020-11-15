@@ -38,7 +38,7 @@
 
 ## Requirements
 
-- [ ] max group size is 3
+- [ ] max group size is 4
 - [ ] create 1 location per group -> inherits from Location (extends)
 - [ ] create 1 organism class for each person in the group -> inherit from Organism (extends)
 - [ ] create 3 member variables for each class
