@@ -39,6 +39,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | English                  | Arabic                        |
 | :----------------------- | :---------------------------- |
 | Hello                    | Marhaba                       |
+| Hello World              | Marhaba bel aalam             |
 | My name is Chris         | Ana esmi Chris                |
 | Good morning             | Sabah alkhr                   |
 | Good afternoon / evening | Masa alkhayr                  |
