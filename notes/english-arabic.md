@@ -147,6 +147,11 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Yellow  | asfar  |
 | Red     | ahmar  |
 | Black   | aswad  |
+| Belt    | hezam  |
+
+### Example Usage
+
+hezam aswad
 
 ## Questions/Phrases
 
