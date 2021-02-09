@@ -23,7 +23,8 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | Copy & paste                   | naskh wa lasaq              |
 | Wow                            | Mashaallah                  |
 | Good luck                      | Betawfek                    |
-| Good job                       | Momtaz                      |
+| Excellent job                  | Momtaz                      |
+| Good/Wonderful job             | Eamal rayie                 |
 | That is good                   | Hatha jayyed                |
 | five                           | khamsa                      |
 | four                           | arbaa                       |
@@ -138,6 +139,14 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | 36      | seta wa thlatheen |
 | 100     | me a              |
 | 1000    | alf               |
+
+## Colors
+
+| English | Arabic |
+| :------ | :----- |
+| Yellow  | asfar  |
+| Red     | ahmar  |
+| Black   | aswad  |
 
 ## Questions/Phrases
 
