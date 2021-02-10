@@ -9,3 +9,4 @@ envFolderName/
 node_modules/
 public/
 .env
+/.metadata/
