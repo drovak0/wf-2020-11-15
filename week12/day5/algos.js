@@ -26,17 +26,51 @@ class PriorityQueue {
    * @return {number} The new length.
    */
   enqueue(element, priority) {
-    // [ ] code here
+    // creating object from queue element
+    const qElement = new QElement(element, priority)
+    let queued = false
+
+    // iterating through the entire
+    // item array to add element at the
+    // correct location of the Queue
+    for (let i = 0; i < this.items.length; i++) {
+      if (this.items[i].priority > qElement.priority) {
+        // Insert new item before the first item whose priority number is larger
+        // smaller priority numbers are first
+        this.items.splice(i, 0, qElement)
+        queued = true
+        break
+      }
+    }
+
+    // if the element has the lowest priority (lower number is higher priority)
+    // it is added at the end of the queue
+    if (queued === false) {
+      this.items.push(qElement)
+    }
+    return this.items.length
   }
 
   /**
    * Removes and returns the most prioritized item.
+   * - Time: O(1) constant.
+   * - Space: O(1) constant.
    * @return {QElement|undefined}.
    */
   dequeue() {
-    // [ ] code here
+    return this.items.shift()
   }
 }
+
+const pq = new PriorityQueue()
+pq.enqueue('chris', 1)
+pq.enqueue('another', 2)
+pq.enqueue('something', 1)
+
+console.log(`pq.items: `, JSON.stringify(pq.items)); // ['chris', 'something', 'another']
+
+console.log(pq.dequeue()) // 'chris'
+
 
 // - LinkedListPriorityQueue
 
