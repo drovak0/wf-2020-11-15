@@ -1,5 +1,6 @@
 package com.codingdojo.thursyay.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,7 +20,9 @@ public class PersonService {
 
   // returns all the persons
   public List<Person> allPersons() {
-    return personRepository.findAll();
+    List<Person> list = new ArrayList<>();
+    personRepository.findAll().forEach(e -> list.add(e));
+    return list;
   }
 
   public Person createPerson(Person person) {

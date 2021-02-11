@@ -14,8 +14,11 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name = "licenses")
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler", "person" })
 public class License {
 
   @Id

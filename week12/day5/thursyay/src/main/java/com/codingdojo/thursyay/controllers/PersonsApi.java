@@ -9,6 +9,7 @@ import com.codingdojo.thursyay.services.LicenseService;
 import com.codingdojo.thursyay.services.PersonService;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -61,9 +62,9 @@ public class PersonsApi {
     return licenseService.createLicense(license);
   }
 
-  // @RequestMapping("/api/books/{id}")
-  // public Book show(@PathVariable("id") Long id) {
-  //   // Book book = bookService.findBook(id);
-  //   // return book;
-  // }
+  @RequestMapping("/api/persons/{id}")
+  public Person show(@PathVariable("id") Long id) {
+    Person person = personService.findPerson(id);
+    return person;
+  }
 }
