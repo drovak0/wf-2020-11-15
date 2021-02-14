@@ -37,7 +37,7 @@ class BinarySearchTree {
   isEmpty() {}
 
   /**
-   * Inserts a new node with the given newVal in the right place to preserver
+   * Inserts a new node with the given newVal in the right place to preserve
    * the order of this tree.
    * @param {number} newVal The data to be added to a new node.
    * @return {BinarySearchTree} This tree.
@@ -54,3 +54,18 @@ class BinarySearchTree {
    */
   insertRecursive(newVal, curr = this.root) {}
 }
+
+/*
+                    root
+                <-- 25 -->
+              /            \
+            15             50
+          /    \         /    \
+        10     22      35     70
+      /   \   /  \    /  \   /  \
+    4    12  18  24  31  44 66  90
+*/
+
+// [ ] - create a tree
+// [ ] - test insert()
+// [ ] - test isEmpty()
