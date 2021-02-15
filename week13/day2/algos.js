@@ -90,7 +90,22 @@ class BinarySearchTree {
    *    the tree is being traversed.
    * @return {number} The smallest integer from this tree.
    */
-  min(current = this.root) {}
+  min(current = this.root) {
+    // check if tree if empty
+    if (this.isEmpty() === true) {
+      return null
+    }
+    // loop all the way down the left side of the tree
+    let min = this.root
+    while(current !== null) {
+      if (current.left === null) {
+        min = current
+        return min.data
+      } else {
+        current = current.left
+      }
+    }
+  }
 
   /**
    * Retrieves the smallest integer data from this tree.
@@ -98,7 +113,17 @@ class BinarySearchTree {
    *    the tree is being traversed.
    * @return {number} The smallest integer from this tree.
    */
-  minRecursive(current = this.root) {}
+  minRecursive(current = this.root) {
+    // check if tree if empty
+    if (this.isEmpty() === true) {
+      return null
+    }
+    let min = current
+    if (current.left !== null) {
+      return this.minRecursive(current.left)
+    }
+    return min.data
+  }
 
   /**
    * Retrieves the largest integer data from this tree.
@@ -106,7 +131,22 @@ class BinarySearchTree {
    *    the tree is being traversed.
    * @return {number} The largest integer from this tree.
    */
-  max(current = this.root) {}
+  max(current = this.root) {
+    // check if tree if empty
+    if (this.isEmpty() === true) {
+      return null
+    }
+    // loop all the way down the right side of the tree
+    let max = this.root
+    while (current !== null) {
+      if (current.right === null) {
+        max = current
+        return max.data
+      } else {
+        current = current.right
+      }
+    }
+  }
 
   /**
    * Retrieves the largest integer data from this tree.
@@ -114,5 +154,38 @@ class BinarySearchTree {
    *    the tree is being traversed.
    * @return {number} The largest integer from this tree.
    */
-  maxRecursive(current = this.root) {}
+  maxRecursive(current = this.root) {
+    // check if tree if empty
+    if (this.isEmpty() === true) {
+      return null
+    }
+    let min = current
+    if (current.right !== null) {
+      return this.maxRecursive(current.right)
+    }
+    return min.data
+  }
 }
+
+/*
+                    root
+                <-- 25 -->
+              /            \
+            15             50
+          /    \         /    \
+        10     22      35     70
+      /   \   /  \    /  \   /  \
+    4    12  18  24  31  44 66  90
+*/
+
+const bts = new BinarySearchTree()
+bts.insert(2)
+bts.insert(3)
+bts.insert(4)
+bts.insert(1)
+bts.insert(5)
+bts.insert(6)
+// console.log(bts.min())
+// console.log(bts.minRecursive())
+// console.log(bts.max())
+console.log(bts.maxRecursive())
