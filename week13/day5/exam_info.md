@@ -1,4 +1,4 @@
-# MERN Exam Day
+# Java Exam Day
 
 Exam code ``
 
