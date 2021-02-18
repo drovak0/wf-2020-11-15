@@ -1,6 +1,6 @@
 # Java Exam Day
 
-Exam code ``
+Exam code `47CDc91f`
 
 ## Scoring
 
