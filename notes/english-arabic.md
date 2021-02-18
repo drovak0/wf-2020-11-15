@@ -113,6 +113,7 @@ Chris's(كريس) Hellowaa, Ma sha alah
 | English      | Arabic         |
 | :----------- | :------------- |
 | No mercy     | Bela rahma     |
+| Have mercy   | Rareem         |
 | Generous     | Kareem         |
 | Leave it     | Khali khali    |
 | Thank god    | Alhamdu lillah |
