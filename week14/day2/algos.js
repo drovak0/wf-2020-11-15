@@ -15,6 +15,8 @@ class Node {
     this.prev = null
   }
 }
+// () ->() ->() ->() ->
+//    <-   <-   <-   <-
 
 /**
  * Class to represent a doubly linked list. Nodes can be linked together
@@ -59,21 +61,99 @@ class DoublyLinkedList {
    * @param {any} data The data for the new node.
    * @return {DoublyLinkedList} This list.
    */
-  insertAtFront(data) {}
+  insertAtFront(data) {
+    const newNode = new Node(data)
+
+    if (!this.head) {
+      this.head = this.tail = newNode
+    } else {
+      this.head.prev = newNode
+      newNode.next = this.head
+      this.head = newNode
+    }
+    return this
+  }
 
   /**
    * Creates a new node and adds it at the back of this list.
    * @param {any} data The data for the new node.
    * @return {DoublyLinkedList} This list.
    */
-  insertAtBack(data) {}
+  insertAtBack(data) {
+    const newTail = new Node(data)
+
+    if (!this.head) {
+      // if no head set the newTail to be both the head and the tail
+      this.head = this.tail = newTail
+    } else {
+      this.tail.next = newTail
+      newTail.prev = this.tail
+      this.tail = newTail
+    }
+    return this
+  }
 
   // EXTRA
   /**
    * Removes the middle node in this list.
    * @return {any} The data of the removed node.
    */
-  removeMiddleNode() {}
+  removeMiddleNode() {
+    // when there is only 1 node, it is the middle, remove it.
+    if (!this.isEmpty() && this.head === this.tail) {
+      const removedData = this.head.data
+      this.head = null
+      this.tail = null
+      return removedData
+    }
+
+    let forwardRunner = this.head
+    let backwardsRunner = this.tail
+
+    while (forwardRunner && backwardsRunner) {
+      if (forwardRunner === backwardsRunner) {
+        const midNode = forwardRunner
+        // () ->()->()->
+        //    <-  <-  <-
+        midNode.prev.next = midNode.next
+        midNode.next.prev = midNode.prev
+        return midNode.data
+      }
+
+      // runners passed each other without stopping on the same node, even length, we can exit early
+      if (forwardRunner.prev === backwardsRunner) {
+        return null
+      }
+
+      forwardRunner = forwardRunner.next
+      backwardsRunner = backwardsRunner.prev
+    }
+    return null
+  }
+
+  printData() {
+    // forward
+    let runner = this.head
+    while(runner !== null) {
+      console.log(runner.data)
+      runner = runner.next
+    }
+
+    // backward
+    runner = this.tail
+    while(runner !== null) {
+      console.log(runner.data)
+      runner = runner.prev
+    }
+  }
 }
 
 const emptyList = new DoublyLinkedList()
+
+emptyList.seedFromArr([1,2,3,4,5])
+// emptyList.insertAtFront(1)
+// emptyList.insertAtBack(5)
+emptyList.removeMiddleNode()
+console.log(emptyList.removeMiddleNode())
+emptyList.printData()
+// console.log(JSON.stringify(emptyList))
